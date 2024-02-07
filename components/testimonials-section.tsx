@@ -16,11 +16,11 @@ const TestimonialsSection = () => {
         },
     ]
     return (
-        <div className=" px-20 py-10 flex gap-6 " >
+        <div className=" px-[17rem] py-10 flex gap-6 " >
             {reviews.map((review) => (
                 <div key={review.clientName} className="bg-white rounded-xl p-12" >
                     <p className="text-2xl leading-6 " >
-                        {review.review} f-
+                        {review.review} 
                     </p>
                     <div className="mt-6 flex" >
                         <Image
