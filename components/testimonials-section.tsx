@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
         },
         {
             review: "I feel clearer not only on our aesthetic, but on my company&apos;s mission for having worked with Stay In Touch. ",
-            clientName: "Micheal Jones",
+            clientName: "Abby Jones",
             clientRole: "CEO Upright",
             clientImage: "/c-2.jpg"
         },
@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
     return (
         <div className=" px-20 py-10 flex gap-6 " >
             {reviews.map((review) => (
-                <div className="bg-white rounded-xl p-12" >
+                <div key={review.clientName} className="bg-white rounded-xl p-12" >
                     <p className="text-2xl leading-6 " >
                         " {review.review} "
                     </p>
