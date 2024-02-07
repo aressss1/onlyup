@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
             {reviews.map((review) => (
                 <div key={review.clientName} className="bg-white rounded-xl p-12" >
                     <p className="text-2xl leading-6 " >
-                        " {review.review} "
+                        {review.review} f-
                     </p>
                     <div className="mt-6 flex" >
                         <Image
