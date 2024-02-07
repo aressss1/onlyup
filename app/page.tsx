@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import ServicesSection from "@/components/services-section";
 
 import { Separator } from "@/components/ui/separator";
+import TestimonialsSection from "../components/testimonials-section";
 
 
 export default function Home() {
@@ -18,6 +19,8 @@ export default function Home() {
       <FeaturedWork />
       <Separator className="bg-[#C4C4C4]" />
       <ServicesSection />
+      <Separator className="bg-[#C4C4C4]" />
+      <TestimonialsSection />
     </div>
   );
 }
