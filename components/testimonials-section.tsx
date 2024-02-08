@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
             <div className=" px-[17rem] py-10 flex gap-6 " >
                 {reviews.map((review) => (
                     <div key={review.clientName} className="bg-white rounded-xl p-12" >
-                        <p className="text-2xl leading-6 " >
+                        <p className="text-2xl  " >
                             {review.review}
                         </p>
                         <div className="mt-6 flex" >
@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
                                 alt={review.clientName}
                                 src={review.clientImage}
                             />
-                            <div className="flex flex-col pl-8 my-auto" >
+                            <div className="flex flex-col gap-1 pl-8 my-auto" >
                                 <div>{review.clientName}</div>
                                 <div>{review.clientCompanyName}</div>
                                 <div>{review.clientRole}</div>
