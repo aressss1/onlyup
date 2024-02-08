@@ -8,7 +8,7 @@ const AboutSection = () => {
                 We&apos;re a Madrid-based digital marketing agency, crafting tailor-made digital product design and development around the globe.
             </div>
             <div className="lg:text-2xl text-base lg:w-[47rem] md:w-[29rem]  " >
-                Zolution Society is where strategies evolve and creativity thrives. Whether it&apos;s transforming an existing digital asset. we&apos;re the architects of next-gen online interaction.
+                At our creative agency, we specialize in turning your unique ideas into captivating visual realities. With a passion for innovation, we bring your concepts to life, crafting designs that not only meet but exceed your expectations
             </div>
         </div>
     );
