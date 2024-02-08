@@ -1,6 +1,7 @@
-import { cn } from '@/lib/utils';
-import localFont from 'next/font/local';
+
 import { Button } from './ui/button';
+
+import localFont from 'next/font/local';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -19,10 +20,8 @@ const FeaturedWork = () => {
             <div className="flex md:flex-row flex-col gap-12 md:gap-0 justify-between  md:py-12 py-4 " >
                 <div className="md:w-[20%] flex flex-col items-start" >
                     <div className="flex flex-col gap-4 items-start sticky top-[10rem] " >
-                        <div className={cn(
-                            "text-2xl",
-                            // font.className
-                        )}>
+                        <div className= "text-2xl text-black font-semibold " 
+                        >
                             Featured Work
                         </div>
                         <Button size="lg" variant="special" className='rounded-[4rem] ' >
