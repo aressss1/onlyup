@@ -20,7 +20,7 @@ const ExploreButton = () => {
 
   return (
     <div className=" flex flex-col "  >
-      <div className="containerClass">
+      <div className="containerClass ">
         <p id="text" className="circularText"></p>
       </div>
       <Image
