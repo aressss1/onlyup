@@ -21,7 +21,7 @@ const FeaturedWork = () => {
                     )}>
                         Featured Work
                     </div>
-                    <Button size="lg" variant="special" className='rounded-[4rem]' >
+                    <Button size="lg" variant="special" className='rounded-[4rem] ' >
                         See all work
                     </Button>
                 </div>
