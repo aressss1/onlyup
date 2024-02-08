@@ -3,15 +3,17 @@ import Image from "next/image";
 const TestimonialsSection = () => {
     const reviews = [
         {
-            review: "I feel clearer not only on our aesthetic, but on my company&apos;s mission for having worked with Stay In Touch. ",
+            review: "I feel clearer not only on our aesthetic, but on my company's mission for having worked with Stay In Touch. ",
             clientName: "Micheal Jones",
-            clientRole: "CEO Upright",
+            clientRole: "CEO & Founder",
+            clientCompanyName: "Upright",
             clientImage: "/c-1.jpg"
         },
         {
-            review: "I feel clearer not only on our aesthetic, but on my company&apos;s mission for having worked with Stay In Touch. ",
+            review: "I feel clearer not only on our aesthetic, but on my company's mission for having worked with Stay In Touch. ",
             clientName: "Abby Jones",
-            clientRole: "CEO Upright",
+            clientRole: "Founder",
+            clientCompanyName: "Star Foundation",
             clientImage: "/c-2.jpg"
         },
     ]
@@ -30,6 +32,7 @@ const TestimonialsSection = () => {
                         />
                         <div className="flex flex-col pl-8 my-auto" >
                             <div>{review.clientName}</div>
+                            <div></div>
                             <div>{review.clientRole}</div>
                         </div>
                     </div>
