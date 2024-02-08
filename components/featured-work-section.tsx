@@ -18,7 +18,7 @@ const FeaturedWork = () => {
                 Work
             </div>
             <div className="flex md:flex-row flex-col gap-12 md:gap-0 justify-between  md:py-12 py-4 " >
-                <div className="md:w-[20%] flex flex-col items-start" >
+                <div className="md:w-[20%] flex flex-col items-start pb-[43px] " >
                     <div className="flex flex-col gap-4 items-start sticky top-[10rem] " >
                         <div className= "text-2xl text-black font-semibold " 
                         >
