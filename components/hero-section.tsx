@@ -19,10 +19,10 @@ const HeroSection = () => {
                     font.className,
                     "lg:text-6xl md:text-5xl  text-2xl lg:leading-[4rem] lg:w-[706px] md:w-[565px] w-[283px] leading-tight "
                 )}>
-                    We Make Creative Things, EVERYDAY.
+                    Turning Ideas into Artful Realities.
                 </div>
                 <div className="text-center px-[18px] md:px-20 lg:px-72" >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi enim non sed saepe veritatis asperiores iste minima provident id!
+                    At our creative agency, we specialize in turning your unique ideas into captivating visual realities. With a passion for innovation, we bring your concepts to life, crafting designs that not only meet but exceed your expectations
                 </div>
             </div>
 
