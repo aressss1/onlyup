@@ -21,7 +21,7 @@ const FeaturedWork = () => {
                     )}>
                         Featured Work
                     </div>
-                    <Button size="lg" variant="special" className='bg-black text-white rounded-[4rem]' >
+                    <Button size="lg" variant="special" className='bg-bg text-white rounded-[4rem]' >
                         See all work
                     </Button>
                 </div>
@@ -54,7 +54,7 @@ const FeaturedWork = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <Button size="lg" variant="special" className='bg-black text-white rounded-[4rem]' >
+                                    <Button size="lg" variant="special" className=' rounded-[4rem]' >
                                         Visit Website
                                     </Button>
                                 </div>
@@ -72,7 +72,7 @@ const FeaturedWork = () => {
                                     alt='work-image'
                                 />
                             </Link>
-                             <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-end pt-4 pb-4 md:pb-8 lg:pt-0 lg:pb-0' >
+                            <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-end pt-4 pb-4 md:pb-8 lg:pt-0 lg:pb-0' >
                                 <div className='flex flex-col' >
                                     <div className='mb-2 mr-4 text-sm ' >
                                         WebFlow | UI/UX
@@ -82,7 +82,7 @@ const FeaturedWork = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <Button size="lg" variant="special" className='bg-black text-white rounded-[4rem]' >
+                                    <Button size="lg" variant="special" className=' rounded-[4rem]' >
                                         Visit Website
                                     </Button>
                                 </div>
@@ -105,7 +105,7 @@ const FeaturedWork = () => {
                                     alt='work-image'
                                 />
                             </Link>
-                             <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-end pt-4 pb-4 md:pb-8 lg:pt-0 lg:pb-0' >
+                            <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-end pt-4 pb-4 md:pb-8 lg:pt-0 lg:pb-0' >
                                 <div className='flex flex-col' >
                                     <div className='mb-2 mr-4 text-sm ' >
                                         WebFlow | UI/UX
@@ -115,7 +115,7 @@ const FeaturedWork = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <Button size="lg" variant="special" className='bg-black text-white rounded-[4rem]' >
+                                    <Button size="lg" variant="special" className=' rounded-[4rem]' >
                                         Visit Website
                                     </Button>
                                 </div>
@@ -133,7 +133,7 @@ const FeaturedWork = () => {
                                     alt='work-image'
                                 />
                             </Link>
-                             <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-end pt-4 pb-4 md:pb-8 lg:pt-0 lg:pb-0' >
+                            <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-end pt-4 pb-4 md:pb-8 lg:pt-0 lg:pb-0' >
                                 <div className='flex flex-col' >
                                     <div className='mb-2 mr-4 text-sm ' >
                                         WebFlow | UI/UX
@@ -143,7 +143,7 @@ const FeaturedWork = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <Button size="lg" variant="special" className='bg-black text-white rounded-[4rem]' >
+                                    <Button size="lg" variant="special" className=' rounded-[4rem]' >
                                         Visit Website
                                     </Button>
                                 </div>
