@@ -21,7 +21,7 @@ const FeaturedWork = () => {
                     <div className="flex flex-col gap-4 items-start sticky top-[10rem] " >
                         <div className={cn(
                             "text-2xl",
-                            font.className
+                            // font.className
                         )}>
                             Featured Work
                         </div>
