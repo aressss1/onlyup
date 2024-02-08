@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className='flex justify-center md:px-12 px-4' >
             <div
                 className={cn(
-                    "bg-bg py-[2px] z-[99999] border rounded-[4rem] border-black flex justify-between items-center fixed lg:w-[79rem] md:w-[44rem] w-[19rem] top-[20px]",
+                    "bg-[url('/bg-2.jpg')] opacity-50 py-[2px] z-[99999] border rounded-[4rem] border-black flex justify-between items-center fixed lg:w-[79rem] md:w-[44rem] w-[19rem] top-[20px]",
                     scrolled && "bg-transparent backdrop-blur-[6px] backdrop-filter"
                 )} >
                 <div className="flex gap-2 p-2 justify-center items-center  " >

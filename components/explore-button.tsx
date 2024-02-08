@@ -19,7 +19,7 @@ const ExploreButton = () => {
   }, []);
 
   return (
-    <div className='bg-bg flex flex-col ' >
+    <div className=" bg-[url('/bg-2.jpg')] opacity-50 flex flex-col "  >
       <div className="containerClass">
         <p id="text" className="circularText"></p>
       </div>
