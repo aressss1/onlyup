@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
         },
     ]
     return (
-        <div className="flex flex-col gap-8" >
+        <div className="flex flex-col gap-8 md:px-12 px-4 py-20 " >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Testimonials
             </div>
