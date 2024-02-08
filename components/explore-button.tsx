@@ -19,7 +19,7 @@ const ExploreButton = () => {
   }, []);
 
   return (
-    <div className=" bg-[url('/bg-2.jpg')] flex flex-col "  >
+    <div className=" flex flex-col "  >
       <div className="containerClass">
         <p id="text" className="circularText"></p>
       </div>
