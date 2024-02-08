@@ -32,7 +32,7 @@ const TestimonialsSection = () => {
                         />
                         <div className="flex flex-col pl-8 my-auto" >
                             <div>{review.clientName}</div>
-                            <div></div>
+                            <div>{review.clientCompanyName}</div>
                             <div>{review.clientRole}</div>
                         </div>
                     </div>
