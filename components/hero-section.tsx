@@ -15,7 +15,7 @@ const HeroSection = () => {
     return (
         <div className="relative" >
             <div 
-                className="bg-[url('/bg-2.jpg')] absolute top-0 opacity-50 h-screen w-full object-cover " 
+                className="bg-[url('/bg-3.jpg')] absolute top-0 opacity-50 h-screen w-full object-cover " 
             />
             <div className="py-5 h-screen flex flex-col z-[10] justify-between gap-28 items-center "  >
                 <div className="flex flex-col items-center gap-5 my-auto pt-36 " >
