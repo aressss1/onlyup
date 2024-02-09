@@ -24,11 +24,11 @@ const TestimonialsSection = () => {
             </div>
             <div className=" lg:px-[14rem] md:px-16 py-10 flex lg:flex-row flex-col gap-6 " >
                 {reviews.map((review) => (
-                    <div key={review.clientName} className="bg-white rounded-xl p-12" >
-                        <p className="md:text-2xl text-lg  " >
+                    <div key={review.clientName} className="bg-white rounded-xl md:p-12 p-6 " >
+                        <p className="md:text-2xl text-lg tracking-wider  " >
                             {review.review}
                         </p>
-                        <div className="lg:mt-6 md:mt-14 flex" >
+                        <div className="lg:mt-6 mt-14 flex" >
                             <Image
                                 className="md:w-20 md:h-20 h-16 w-16 rounded-full object-cover"
                                 alt={review.clientName}
