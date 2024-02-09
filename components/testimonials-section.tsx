@@ -22,19 +22,19 @@ const TestimonialsSection = () => {
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Testimonials
             </div>
-            <div className=" px-[14rem] py-10 flex gap-6 " >
+            <div className=" lg:px-[14rem] md:px-16 py-10 flex lg:flex-row flex-col gap-6 " >
                 {reviews.map((review) => (
                     <div key={review.clientName} className="bg-white rounded-xl p-12" >
-                        <p className="text-2xl  " >
+                        <p className="md:text-2xl text-lg  " >
                             {review.review}
                         </p>
-                        <div className="mt-6 flex" >
+                        <div className="lg:mt-6 md:mt-14 flex" >
                             <Image
-                                className="w-20 h-20 rounded-full object-cover"
+                                className="md:w-20 md:h-20 h-16 w-16 rounded-full object-cover"
                                 alt={review.clientName}
                                 src={review.clientImage}
                             />
-                            <div className="flex flex-col gap-1 pl-8 my-auto" >
+                            <div className="flex flex-col text-sm md:text-base gap-1 pl-8 my-auto" >
                                 <div>{review.clientName}</div>
                                 <div>{review.clientCompanyName}</div>
                                 <div>{review.clientRole}</div>
