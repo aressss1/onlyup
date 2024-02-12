@@ -1,5 +1,5 @@
-
 import Image from 'next/image';
+
 import { Separator } from './ui/separator';
 
 const Footer = () => {
