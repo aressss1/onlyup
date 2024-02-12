@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import ExploreButton from "./explore-button";
 
 const font = localFont({
-    src: '../public/fonts/NeueMetana-Bold.otf',
-    variable: '--font-neue-metana',
+    src: '../public/fonts/GT-Super-Display-Medium-Trial.otf',
+    variable: '--font-gt-super',
 })
 
 
