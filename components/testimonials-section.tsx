@@ -3,7 +3,7 @@ import Image from "next/image";
 const TestimonialsSection = () => {
     const reviews = [
         {
-            review: " OnlyUp Agency is the go-to for turning dreams into visual masterpieces. Their team's skill and dedication shine through every project. Exceptional creativity, exceptional results! ",
+            review: " OnlyUp Agency turns ideas into art with finesse. Working with them was a breeze, and the results were beyond our expectations. Highly recommend! ",
             clientName: "Mark Harris",
             clientRole: "CEO & Founder",
             clientCompanyName: "VisionCraft Co.",
