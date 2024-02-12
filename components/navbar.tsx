@@ -1,6 +1,5 @@
 'use client'
 
-import localFont from 'next/font/local'
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
@@ -9,10 +8,7 @@ import { useScrollTop } from '@/hooks/use-scroll-top';
 import { Button } from "./ui/button";
 
 
-const font = localFont({
-    src: '../public/fonts/NeueMetana-Bold.otf',
-    variable: '--font-neue-metana',
-})
+
 
 const Navbar = () => {
     const scrolled = useScrollTop()
@@ -29,10 +25,7 @@ const Navbar = () => {
                         src="Logo.svg"
                         alt="logo"
                     />
-                    <h1 className={cn(
-                        // font.className,
-                        "text-xl "
-                    )} >
+                    <h1 className="text-xl" >
                         OnlyUp
                     </h1>
                 </div>
