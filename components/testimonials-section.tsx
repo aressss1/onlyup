@@ -3,17 +3,17 @@ import Image from "next/image";
 const TestimonialsSection = () => {
     const reviews = [
         {
-            review: "I feel clearer not only on our aesthetic, but on my company's mission for having worked with Stay In Touch. ",
-            clientName: "Micheal Jones",
+            review: "OnlyUp Agency is the go-to for turning dreams into visual masterpieces. Their team's skill and dedication shine through every project. Exceptional creativity, exceptional results! ",
+            clientName: "Mark Harris",
             clientRole: "CEO & Founder",
-            clientCompanyName: "Upright",
+            clientCompanyName: "VisionCraft Co.",
             clientImage: "/c-1.jpg"
         },
         {
-            review: "I feel clearer not only on our aesthetic, but on my company's mission for having worked with Stay In Touch. ",
-            clientName: "Abby Jones",
+            review: "OnlyUp Agency – where creativity meets perfection. They brought our concept to life in ways we hadn't imagined. Professional, innovative, and truly outstanding!",
+            clientName: "Ryan Foster",
             clientRole: "Founder",
-            clientCompanyName: "Star Foundation",
+            clientCompanyName: "DreamBuilders Inc.",
             clientImage: "/c-2.jpg"
         },
     ]
