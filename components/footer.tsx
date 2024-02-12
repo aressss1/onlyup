@@ -9,10 +9,10 @@ const Footer = () => {
                 <div className='flex justify-between' >
                     <div className='flex flex-col text-left gap-6' >
                         <div className='text-base' >
-                            Let&apos; Talk.
+                            Have a project? Let&apos; Talk.
                         </div>
                         <div className='text-5xl border-b-4 border-black ' >
-                            info@onlyup.com
+                            <p className='pb-2' >info@onlyup.com</p>
                         </div>
                     </div>
                     <div className="flex gap-8 opacity-80  " >
@@ -34,7 +34,7 @@ const Footer = () => {
 
             <Separator className='bg-[#C4C4C4]' />
 
-            <div className="text-base text-center py-4" >
+            <div className="text-sm text-center py-4" >
                 Copyright &copy; 2024 All rights reserved.
             </div>
         </div>
