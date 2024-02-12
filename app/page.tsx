@@ -3,10 +3,10 @@ import FeaturedWork from "@/components/featured-work-section";
 import HeroSection from "@/components/hero-section";
 import Navbar from "@/components/navbar";
 import ServicesSection from "@/components/services-section";
+import TestimonialsSection from "@/components/testimonials-section";
+import Footer from "@/components/footer";
 
 import { Separator } from "@/components/ui/separator";
-import TestimonialsSection from "../components/testimonials-section";
-import Footer from "@/components/footer";
 
 
 export default function Home() {
