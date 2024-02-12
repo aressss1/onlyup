@@ -24,14 +24,14 @@ const FeaturedWork = () => {
     const featuredProjectR2 = [
         {
             projextImageSrc: "/p-3.png",
-            projectType: "Product Interface Design",
+            projectType: "Mockup Design",
             projectName: "Rooney Mae",
             projectLink: "/",
         },
         {
             projextImageSrc: "/p-1.jpg",
             projectType: "Branding",
-            projectName: "Reedly Cavviler",
+            projectName: "Reedly C.",
             projectLink: "/",
         }
     ]
@@ -56,7 +56,7 @@ const FeaturedWork = () => {
 
                 <div className='flex flex-col lg:w-[75%] md:w-[60%] justify-between ' >
                     <div className='flex flex-col lg:flex-row' >
-                        
+
                         <div className='w-[100%] lg:mr-4' >
                             {featuredProjectR1.map((project) => (
                                 <div key={project.projectName} className='flex flex-col mb-12' >
