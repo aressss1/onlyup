@@ -17,6 +17,7 @@ const TestimonialsSection = () => {
             clientImage: "/c-2.jpg"
         },
     ]
+
     return (
         <div className="flex flex-col gap-8 md:px-12 px-4 py-20 " >
             <div className="text-sm font-normal opacity-80 uppercase " >
@@ -30,7 +31,7 @@ const TestimonialsSection = () => {
                         </p>
                         <div className="lg:mt-10 mt-14 flex" >
                             <Image
-                                className="md:w-20 md:h-20 h-16 w-16 rounded-full object-cover"
+                                className="md:w-[4.5rem] md:h-[4.5rem] h-16 w-16 rounded-full object-cover"
                                 alt={review.clientName}
                                 src={review.clientImage}
                             />
