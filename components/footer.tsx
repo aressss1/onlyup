@@ -6,6 +6,10 @@ const Footer = () => {
     return (
         <div className='bg-white text-black' >
             <div className=" flex flex-col gap-12 py-24 md:px-12 px-4" >
+                <div className="text-sm font-normal opacity-80 uppercase " >
+                    Contact
+                </div>
+
                 <div className='flex justify-between' >
                     <div className='flex flex-col text-left gap-6' >
                         <div className='text-base' >
