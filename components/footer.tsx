@@ -22,11 +22,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col gap-3 text-left' >
+                <div className='flex flex-col gap-2 text-left' >
                     <div className='text-base' >
                         Job Applications
                     </div>
-                    <div className='tetx-base opacity-90' >
+                    <div className='tetx-base opacity-60' >
                         apply@onlyup.com
                     </div>
                 </div>
