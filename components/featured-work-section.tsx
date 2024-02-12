@@ -44,11 +44,11 @@ const FeaturedWork = () => {
             <div className="flex md:flex-row flex-col gap-12 md:gap-0 justify-between  md:py-12 py-4 " >
                 <div className="md:w-[20%] flex flex-col items-start pb-[43px] " >
                     <div className="flex flex-col gap-4 items-start sticky top-[10rem] " >
-                        <div className="text-2xl text-black font-semibold "
+                        <div className="text-2xl text-black font-medium "
                         >
                             Featured Work
                         </div>
-                        <Button size="lg" variant="special" className='rounded-[4rem] ' >
+                        <Button size="lg" variant="special" className='rounded-[4rem] opacity-80 ' >
                             See all work
                         </Button>
                     </div>
@@ -72,15 +72,15 @@ const FeaturedWork = () => {
                                     </Link>
                                     <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-end pt-4 pb-4 md:pb-8 lg:pt-0 lg:pb-0' >
                                         <div className='flex flex-col' >
-                                            <div className='mb-2 mr-4 text-sm ' >
+                                            <div className='mb-2 mr-4 text-sm opacity-75 ' >
                                                 {project.projectType}
                                             </div>
-                                            <div className='text-2xl font-semibold' >
+                                            <div className='text-2xl font-medium' >
                                                 {project.projectName}
                                             </div>
                                         </div>
                                         <div>
-                                            <Button size="lg" variant="special" className=' rounded-[4rem]' >
+                                            <Button size="lg" variant="special" className=' rounded-[4rem]  opacity-80 ' >
                                                 View case study
                                             </Button>
                                         </div>
@@ -104,15 +104,15 @@ const FeaturedWork = () => {
                                     </Link>
                                     <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-end pt-4 pb-4 md:pb-8 lg:pt-0 lg:pb-0' >
                                         <div className='flex flex-col' >
-                                            <div className='mb-2 mr-4 text-sm ' >
+                                            <div className='mb-2 mr-4 text-sm opacity-75 ' >
                                                 {project.projectType}
                                             </div>
-                                            <div className='text-2xl font-semibold' >
+                                            <div className='text-2xl font-medium' >
                                                 {project.projectName}
                                             </div>
                                         </div>
                                         <div>
-                                            <Button size="lg" variant="special" className=' rounded-[4rem]' >
+                                            <Button size="lg" variant="special" className=' rounded-[4rem] opacity-80 ' >
                                                 View case study
                                             </Button>
                                         </div>

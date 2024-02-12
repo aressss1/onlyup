@@ -34,7 +34,7 @@ const Footer = () => {
 
             <Separator className='bg-[#C4C4C4]' />
 
-            <div className="text-sm text-center py-4" >
+            <div className="text-sm text-center py-4 opacity-70 " >
                 Copyright &copy; 2024 All rights reserved.
             </div>
         </div>

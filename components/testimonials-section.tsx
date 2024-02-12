@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
             <div className=" lg:px-[14rem] md:px-16 py-10 flex lg:flex-row flex-col gap-6 " >
                 {reviews.map((review) => (
                     <div key={review.clientName} className="bg-white rounded-xl md:p-12 p-6 " >
-                        <p className="text-lg tracking-wider  " >
+                        <p className="text-2xl opacity-70  " >
                             {review.review}
                         </p>
                         <div className="lg:mt-10 mt-14 flex" >
