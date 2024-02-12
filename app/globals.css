@@ -118,4 +118,8 @@
     -webkit-background-clip: text;
     background-clip: text; /* Standard property for compatibility */
   }
+
+  .neue-haas-grotesk-font {
+    font-family: neue-haas-grotesk-display, sans-serif;
+  }
 }

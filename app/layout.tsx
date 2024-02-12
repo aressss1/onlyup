@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import localFont from 'next/font/local'
+// import localFont from 'next/font/local'
 
 import "./globals.css";
 
-const font = localFont({
-  src: '../public/fonts/NeueMetana-Regular.otf',
-})
+// const font = localFont({
+//   src: '../public/fonts/NeueMetana-Regular.otf',
+// })
 
 export const metadata: Metadata = {
   title: "OnlyUp",
@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className= "neue-haas-grotesk-font"
+      // {font.className}
+      >
         {children}
       </body>
     </html>
