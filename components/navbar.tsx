@@ -29,7 +29,7 @@ const Navbar = () => {
                         OnlyUp
                     </h1>
                 </div>
-                <Button variant="special" className='rounded-[4rem] h-9 mr-2 '  >
+                <Button variant="special" className='rounded-[4rem] h-9 mr-2 px-5 '  >
                     Menu
                 </Button>
             </div>
