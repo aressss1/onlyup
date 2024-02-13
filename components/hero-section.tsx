@@ -21,7 +21,7 @@ const HeroSection = () => {
                 <div className="flex flex-col items-center gap-5 my-auto pt-36 " >
                     <div className={cn(
                         font.className,
-                        "lg:text-7xl md:text-5xl  text-2xl lg:leading-[5rem] lg:w-[730px] md:w-[565px] w-[283px] text-center "
+                        "lg:text-7xl md:text-5xl  text-2xl lg:leading-[5rem] lg:w-[730px] md:w-[565px] w-[263px] text-center "
                     )}>
                         Turning Ideas into Artful Realities.
                     </div>
