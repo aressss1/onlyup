@@ -1,16 +1,16 @@
 import { footerLinks, links, perspective, slideIn } from '@/content';
-import styles from './style.module.scss';
+
 import { motion } from 'framer-motion';
 
 export default function Navlink() {
   return (
-    <div className={styles.nav}>
-       <div className={styles.body}>
+    <div className="nav">
+       <div className="body">
         {
             links.map( (link, i) => {
                 const { title, href } = link;
                 return (
-                    <div key={`b_${i}`} className={styles.linkContainer}>
+                    <div key={`b_${i}`} className="linkContainer">
                         <motion.div
                         //   href={href}
                           custom={i}
@@ -28,7 +28,7 @@ export default function Navlink() {
             })
         }
        </div>
-       <motion.div className={styles.footer}>
+       <motion.div className="footer">
             {
                 footerLinks.map( (link, i) => {
                     const { title, href } = link;
