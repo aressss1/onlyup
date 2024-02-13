@@ -47,20 +47,20 @@ const Navbar = () => {
                         OnlyUp
                     </h1>
                 </div>
-            </div>
 
-            <div >
-                <motion.div
-                    className="menu"
-                    variants={menu}
-                    animate={isActive ? "open" : "closed"}
-                    initial="closed"
-                >
-                    <AnimatePresence>
-                        {isActive && <Navlink />}
-                    </AnimatePresence>
-                </motion.div>
-                <CustomButton isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
+                <div >
+                    <motion.div
+                        className="menu"
+                        variants={menu}
+                        animate={isActive ? "open" : "closed"}
+                        initial="closed"
+                    >
+                        <AnimatePresence>
+                            {isActive && <Navlink />}
+                        </AnimatePresence>
+                    </motion.div>
+                    <CustomButton isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
+                </div>
             </div>
         </div>
     );
