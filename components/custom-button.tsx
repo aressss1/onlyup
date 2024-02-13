@@ -17,13 +17,13 @@ export default function CustomButton({
             transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1]}}
         >
             <div 
-                className="element"
+                className="el"
                 onClick={() => {toggleMenu()}}
             >
                 <PerspectiveText label="Menu"/>
             </div>
             <div 
-                className="element"
+                className="el"
                 onClick={() => {toggleMenu()}}
             >
                 <PerspectiveText label="Close" />

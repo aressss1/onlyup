@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from "react";
 
 import { cn } from "@/lib/utils";
 import { useScrollTop } from '@/hooks/use-scroll-top';
 
-import { useState } from "react";
 import CustomButton from "./custom-button";
 import Navlink from "./navlink";
 
