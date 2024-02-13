@@ -10,12 +10,12 @@ const Footer = () => {
                     Contact
                 </div>
 
-                <div className='flex justify-between' >
+                <div className='flex flex-col md:flex-row gap-12 md:gap-0 justify-between' >
                     <div className='flex flex-col text-left gap-6' >
                         <div className='text-base' >
                             Have a project? Let&apos; Talk.
                         </div>
-                        <div className='text-5xl border-b-4 border-black ' >
+                        <div className='text-3xl md:text-5xl border-b-4 border-black ' >
                             <p className='pb-2' >info@onlyup.com</p>
                         </div>
                     </div>
