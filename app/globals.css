@@ -129,24 +129,24 @@
   /* For CustomBotton.tsx */
   .button {
     @apply relative;
-  
+
     & > div {
       @apply button bg-black border-t-4 border-yellow-300 rounded-full overflow-hidden;
-  
+
       .el {
         @apply w-full h-full p-4 flex items-center justify-center bg-green-300;
-  
+
         &:nth-of-type(2) {
           @apply bg-black;
-  
+
           p {
             @apply text-yellow-300;
           }
         }
-  
+
         &:hover {
           .perspectiveText {
-            @apply transform rotate-x-90;
+            transform: rotateX(90deg);
             p:nth-of-type(1) {
               @apply transform -translate-y-full opacity-0;
             }
@@ -158,17 +158,16 @@
       }
     }
   }
-  
+
   .perspectiveText {
     @apply flex flex-col justify-center items-center h-full w-full transform-style-preserve-3d transition-transform duration-750 ease-in-out;
-  
+
     p {
       @apply transition-all duration-750 ease-in-out pointer-events-none text-uppercase;
-  
+
       &:nth-of-type(2) {
         @apply absolute transform-origin-bottom-center transform rotate-x-90 translate-y-9 opacity-0;
       }
     }
   }
-
 }
