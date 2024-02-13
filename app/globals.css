@@ -131,8 +131,8 @@
   /* For CustomButton.tsx */
   .customButton{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 6px;
+    right: 8px;
     width: 100px;
     height: 40px;
     cursor: pointer;
