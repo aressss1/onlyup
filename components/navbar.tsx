@@ -48,8 +48,8 @@ const Navbar = () => {
                     </h1>
                 </div>
             </div>
-            
-            <div className="relative z-100 ">
+
+            <div >
                 <motion.div
                     className="menu"
                     variants={menu}
