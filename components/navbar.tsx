@@ -1,17 +1,35 @@
 'use client'
 
 import Image from "next/image";
+import { AnimatePresence, motion } from 'framer-motion';
 
 import { cn } from "@/lib/utils";
 import { useScrollTop } from '@/hooks/use-scroll-top';
 
 import { Button } from "./ui/button";
+import { useState } from "react";
+import CustomButton from "./custom-button";
 
-
-
+const menu = {
+    open: {
+        width: "480px",
+        height: "650px",
+        top: "-25px",
+        right: "-25px",
+        transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
+    },
+    closed: {
+        width: "100px",
+        height: "40px",
+        top: "0px",
+        right: "0px",
+        transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1] }
+    }
+}
 
 const Navbar = () => {
-    const scrolled = useScrollTop()
+    const scrolled = useScrollTop();
+    const [isActive, setIsActive] = useState(false)
 
     return (
         <div className='flex justify-center md:px-12 px-4' >
@@ -29,9 +47,22 @@ const Navbar = () => {
                         OnlyUp
                     </h1>
                 </div>
-                <Button variant="special" className='rounded-[4rem] h-9 mr-2 px-5 '  >
+                {/* <Button variant="special" className='rounded-[4rem] h-9 mr-2 px-5 '  >
                     Menu
-                </Button>
+                </Button> */}
+                <div>
+                    {/* <motion.div
+                        className="w-[480px] h-[480px] bg-[#c9fd74] rounded-[25px] relative "
+                        variants={menu}
+                        animate={isActive ? "open" : "closed"}
+                        initial="closed"
+                    >
+                        <AnimatePresence>
+                            {isActive && <NavLinks />}
+                        </AnimatePresence>
+                    </motion.div> */}
+                    <CustomButton isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
+                </div>
             </div>
         </div>
     );
