@@ -32,36 +32,37 @@ const Navbar = () => {
     const [isActive, setIsActive] = useState(false)
 
     return (
-        // <div className='flex justify-center md:px-12 px-4' >
-        //     <div
-        //         className={cn(
-        //             "py-[4px] z-[99999] border rounded-[4rem] border-black flex justify-between items-center fixed lg:w-[79rem] md:w-[44rem] w-[19rem] top-[20px]",
-        //             scrolled ? "bg-transparent backdrop-blur-[6px] backdrop-filter" : "bg-[url('/bg-2.jpg')]"
-        //         )} >
-        //         <div className="flex gap-2 p-2 justify-center items-center  " >
-        //             <Image
-        //                 src="Logo.svg"
-        //                 alt="logo"
-        //             />
-        //             <h1 className="text-xl" >
-        //                 OnlyUp
-        //             </h1>
-        //         </div>
-        //     </div>
-        // </div>
-        <div className="header">
-        <motion.div 
-            className="menu"
-            variants={menu}
-            animate={isActive ? "open" : "closed"}
-            initial="closed"
-        >
-            <AnimatePresence>
-                {isActive && <Navlink />}
-            </AnimatePresence>
-        </motion.div>
-        <CustomButton isActive={isActive} toggleMenu={() => {setIsActive(!isActive)}}/>
-    </div>
+        <div className='flex justify-center md:px-12 px-4' >
+            <div
+                className={cn(
+                    "py-[4px] z-[99999] border rounded-[4rem] border-black flex justify-between items-center fixed lg:w-[79rem] md:w-[44rem] w-[19rem] top-[20px]",
+                    scrolled ? "bg-transparent backdrop-blur-[6px] backdrop-filter" : "bg-[url('/bg-2.jpg')]"
+                )} >
+                <div className="flex gap-2 p-2 justify-center items-center  " >
+                    <Image
+                        src="Logo.svg"
+                        alt="logo"
+                    />
+                    <h1 className="text-xl" >
+                        OnlyUp
+                    </h1>
+                </div>
+            </div>
+            
+            <div className="relative z-100 ">
+                <motion.div
+                    className="menu"
+                    variants={menu}
+                    animate={isActive ? "open" : "closed"}
+                    initial="closed"
+                >
+                    <AnimatePresence>
+                        {isActive && <Navlink />}
+                    </AnimatePresence>
+                </motion.div>
+                <CustomButton isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
+            </div>
+        </div>
     );
 }
 
