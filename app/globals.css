@@ -221,6 +221,10 @@
         text-decoration: none;
         color: black;
         font-size: 46px;
+
+        @media  (max-width: 768px) {
+          font-size: 34px 
+        }
       }
     }
 

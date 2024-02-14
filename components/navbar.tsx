@@ -30,7 +30,7 @@ const menu = {
 const mobileMenu = {
     open: {
         width: "302px",
-        height: "450px",
+        height: "550px",
         top: "-26px",
         right: "0px",
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
