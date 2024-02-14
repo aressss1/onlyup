@@ -19,10 +19,10 @@ const menu = {
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
     },
     closed: {
-        width: "100px",
-        height: "40px",
-        top: "-20px",
-        right: "8px",
+        width: "85px",
+        height: "25px",
+        top: "-14px",
+        right: "16px",
         transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1] }
     }
 }
@@ -36,10 +36,10 @@ const mobileMenu = {
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
     },
     closed: {
-        width: "100px",
-        height: "40px",
-        top: "-20px",
-        right: "8px",
+        width: "85px",
+        height: "25px",
+        top: "-14px",
+        right: "16px",
         transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1] }
     }
 }
