@@ -4,7 +4,7 @@ import { Separator } from './ui/separator';
 
 const Footer = () => {
     return (
-        <div className='bg-white text-black' >
+        <div id="contact" className='bg-white text-black' >
             <div className=" flex flex-col gap-12 py-24 md:px-12 px-4" >
                 <div className="text-sm font-normal opacity-80 uppercase " >
                     Contact

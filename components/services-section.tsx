@@ -21,7 +21,7 @@ const ServicesSection = () => {
     ]
 
     return (
-        <div className="flex flex-col text-left lg:gap-16 gap-12 py-12 md:px-12 px-4" >
+        <div id="services" className="flex flex-col text-left lg:gap-16 gap-12 py-12 md:px-12 px-4" >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Services
             </div>
