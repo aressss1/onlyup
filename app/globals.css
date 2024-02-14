@@ -137,6 +137,8 @@
     cursor: pointer;
     border-radius: 25px;
     overflow: hidden;
+    border-width: 1px;
+    border-color: black;
 
     .slider {
       position: relative;
@@ -146,14 +148,14 @@
       .el {
         width: 100%;
         height: 100%;
-        background-color: #c9fd74;
+        background-color: white;
         p {
           margin: 0px;
         }
         &:nth-of-type(2) {
-          background-color: black;
+          background-color: white;
           p {
-            color: #c9fd74;
+            color: black;
           }
         }
         &:hover {
@@ -237,7 +239,7 @@
   .menu {
     width: 480px;
     height: 650px;
-    background-color: #c9fd74;
+    background-color: #EF4242;
     border-radius: 25px;
     position: absolute;
   }
