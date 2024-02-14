@@ -37,7 +37,7 @@ const FeaturedWork = () => {
     ]
 
     return (
-        <div className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" >
+        <div id="work" className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Work
             </div>
