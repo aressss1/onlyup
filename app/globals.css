@@ -131,6 +131,56 @@ body {
     font-family: neue-haas-grotesk-display, sans-serif;
   }
 
+  /* for navbar.tsx */
+
+  .menu {
+    width: 480px;
+    height: 650px;
+    background-color: #EF4242;
+    border-radius: 25px;
+    position: absolute;
+  }
+
+  /* for Navlink.tsx */
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 40px 50px 40px;
+    height: 100%;
+    box-sizing: border-box;
+
+    .body {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+
+      .linkContainer {
+        perspective: 120px;
+        perspective-origin: bottom;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 46px;
+
+        @media  (max-width: 768px) {
+          font-size: 34px 
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        width: 50%;
+        margin-top: 5px;
+      }
+    }
+  }
+
   /* For CustomButton.tsx */
   .customButton {
     position: absolute;
@@ -203,53 +253,50 @@ body {
     }
   }
 
-  /* for Navlink.tsx */
+  /* For NormalButton.tsx  */
+  .normalButton {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 25px;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: black;
 
-  .nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 100px 40px 50px 40px;
-    height: 100%;
-    box-sizing: border-box;
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
 
-    .body {
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
-
-      .linkContainer {
-        perspective: 120px;
-        perspective-origin: bottom;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 46px;
-
-        @media  (max-width: 768px) {
-          font-size: 34px 
+      .el {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        p {
+          margin: 0px;
+        }
+        &:nth-of-type(2) {
+          background-color: white;
+          p {
+            color: black;
+          }
+        }
+        &:hover {
+          .perspectiveText {
+            transform: rotateX(90deg);
+            p {
+              &:nth-of-type(1) {
+                transform: translateY(-100%);
+                opacity: 0;
+              }
+              &:nth-of-type(2) {
+                opacity: 1;
+              }
+            }
+          }
         }
       }
     }
-
-    .footer {
-      display: flex;
-      flex-wrap: wrap;
-      a {
-        width: 50%;
-        margin-top: 5px;
-      }
-    }
   }
 
-  /* for navbar.tsx */
-
-  .menu {
-    width: 480px;
-    height: 650px;
-    background-color: #EF4242;
-    border-radius: 25px;
-    position: absolute;
-  }
+  
 }

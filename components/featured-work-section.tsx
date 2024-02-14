@@ -3,6 +3,7 @@ import { Button } from './ui/button';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import NormalButton from './ui/buttons/normal-button';
 
 
 const FeaturedWork = () => {
@@ -48,9 +49,10 @@ const FeaturedWork = () => {
                         >
                             Featured Work
                         </div>
-                        <Button size="lg" variant="special" className='rounded-[4rem] opacity-80 ' >
+                        {/* <Button size="lg" variant="special" className='rounded-[4rem] opacity-80 ' >
                             See all work
-                        </Button>
+                        </Button> */}
+                        <NormalButton label='See all work' href="/" />
                     </div>
                 </div>
 

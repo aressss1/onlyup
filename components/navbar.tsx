@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useScrollTop } from '@/hooks/use-scroll-top';
 
-import CustomButton from "./custom-button";
+import CustomButton from "./ui/buttons/custom-button";
 import Navlink from "./navlink";
 
 const menu = {
