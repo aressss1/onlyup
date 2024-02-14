@@ -15,14 +15,14 @@ const menu = {
         width: "480px",
         height: "650px",
         top: "-25px",
-        right: "-25px",
+        right: "0px",
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
     },
     closed: {
         width: "100px",
         height: "40px",
-        top: "0px",
-        right: "0px",
+        top: "-20px",
+        right: "8px",
         transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1] }
     }
 }
@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className='flex justify-center md:px-12 px-4' >
             <div
                 className={cn(
-                    "py-[4px] z-[99999] border rounded-[4rem] border-black flex justify-between items-center fixed lg:w-[79rem] md:w-[44rem] w-[19rem] top-[20px]",
+                    "py-[4px] z-[999] border rounded-[4rem] border-black flex justify-between items-center fixed lg:w-[79rem] md:w-[44rem] w-[19rem] top-[20px]",
                     scrolled ? "bg-transparent backdrop-blur-[6px] backdrop-filter" : "bg-[url('/bg-2.jpg')]"
                 )} >
                 <div className="flex gap-2 p-2 justify-center items-center  " >
@@ -48,7 +48,7 @@ const Navbar = () => {
                     </h1>
                 </div>
 
-                <div  >
+                <div className="relative" >
                     <motion.div
                         className="menu"
                         variants={menu}

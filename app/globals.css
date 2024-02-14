@@ -129,7 +129,8 @@
   /* For CustomButton.tsx */
   .customButton {
     position: absolute;
-    top: 6px;
+    z-index: 99999;
+    top: -20px;
     right: 8px;
     width: 100px;
     height: 40px;
@@ -238,6 +239,6 @@
     height: 650px;
     background-color: #c9fd74;
     border-radius: 25px;
-    position: relative;
+    position: absolute;
   }
 }
