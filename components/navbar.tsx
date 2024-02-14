@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { AnimatePresence, motion } from 'framer-motion';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
 import { useScrollTop } from '@/hooks/use-scroll-top';
@@ -12,8 +12,25 @@ import Navlink from "./navlink";
 
 const menu = {
     open: {
-        // width: "480px",
-        // height: "650px",
+        width: "480px",
+        height: "650px",
+        top: "-26px",
+        right: "0px",
+        transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
+    },
+    closed: {
+        width: "100px",
+        height: "40px",
+        top: "-20px",
+        right: "8px",
+        transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1] }
+    }
+}
+
+const mobileMenu = {
+    open: {
+        width: "302px",
+        height: "450px",
         top: "-26px",
         right: "0px",
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
@@ -30,6 +47,20 @@ const menu = {
 const Navbar = () => {
     const scrolled = useScrollTop();
     const [isActive, setIsActive] = useState(false)
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+        };
+
+        handleResize(); // Call initially
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     return (
         <div className='flex justify-center md:px-12 px-4' >
@@ -51,7 +82,7 @@ const Navbar = () => {
                 <div className="relative" >
                     <motion.div
                         className="menu"
-                        variants={menu}
+                        variants={isMobile ? mobileMenu : menu}
                         animate={isActive ? "open" : "closed"}
                         initial="closed"
                     >
