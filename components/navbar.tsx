@@ -12,8 +12,8 @@ import Navlink from "./navlink";
 
 const menu = {
     open: {
-        width: "480px",
-        height: "650px",
+        // width: "480px",
+        // height: "650px",
         top: "-26px",
         right: "0px",
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
