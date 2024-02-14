@@ -48,7 +48,7 @@ const Navbar = () => {
                     </h1>
                 </div>
 
-                <div >
+                <div  >
                     <motion.div
                         className="menu"
                         variants={menu}

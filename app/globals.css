@@ -121,15 +121,13 @@
     background-clip: text; /* Standard property for compatibility */
   }
 
-
   /* For Font */
   .neue-haas-grotesk-font {
     font-family: neue-haas-grotesk-display, sans-serif;
   }
 
-
   /* For CustomButton.tsx */
-  .customButton{
+  .customButton {
     position: absolute;
     top: 6px;
     right: 8px;
@@ -139,43 +137,43 @@
     border-radius: 25px;
     overflow: hidden;
 
-    .slider{
-        position: relative;
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .el {
         width: 100%;
         height: 100%;
-
-        .el{
-            width: 100%;
-            height: 100%;
-            background-color: #c9fd74;
-            p{
-                margin: 0px;
-            }
-            &:nth-of-type(2){
-                background-color: black;
-                p{
-                    color: #c9fd74;
-                }
-            }
-            &:hover{
-                .perspectiveText{
-                    transform: rotateX(90deg);
-                    p{
-                        &:nth-of-type(1){
-                            transform: translateY(-100%);
-                            opacity: 0;
-                        }
-                        &:nth-of-type(2){
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
+        background-color: #c9fd74;
+        p {
+          margin: 0px;
         }
+        &:nth-of-type(2) {
+          background-color: black;
+          p {
+            color: #c9fd74;
+          }
+        }
+        &:hover {
+          .perspectiveText {
+            transform: rotateX(90deg);
+            p {
+              &:nth-of-type(1) {
+                transform: translateY(-100%);
+                opacity: 0;
+              }
+              &:nth-of-type(2) {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
     }
-}
+  }
 
-.perspectiveText{
+  .perspectiveText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,69 +182,62 @@
     width: 100%;
     transform-style: preserve-3d;
     transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
-    p{
-        transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
-        pointer-events: none;
-        text-transform: uppercase;
-        &:nth-of-type(2){
-            position: absolute;
-            transform-origin: bottom center;
-            transform: rotateX(-90deg) translateY(9px);
-            opacity: 0;
-        }
+    p {
+      transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+      pointer-events: none;
+      text-transform: uppercase;
+      &:nth-of-type(2) {
+        position: absolute;
+        transform-origin: bottom center;
+        transform: rotateX(-90deg) translateY(9px);
+        opacity: 0;
+      }
     }
-}
+  }
 
-/* for Navlink.tsx */
+  /* for Navlink.tsx */
 
-.nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 100px 40px 50px 40px;
-  height: 100%;
-  box-sizing: border-box;
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 40px 50px 40px;
+    height: 100%;
+    box-sizing: border-box;
 
-  .body{
+    .body {
       display: flex;
       gap: 10px;
       flex-direction: column;
-      
-      .linkContainer{
-          perspective: 120px;
-          perspective-origin: bottom;
-      }
-      a{
-          text-decoration: none;
-          color: black;
-          font-size: 46px;
-      }
-  }
 
-  .footer{
+      .linkContainer {
+        perspective: 120px;
+        perspective-origin: bottom;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 46px;
+      }
+    }
+
+    .footer {
       display: flex;
       flex-wrap: wrap;
-      a{
-          width: 50%;
-          margin-top: 5px;
+      a {
+        width: 50%;
+        margin-top: 5px;
       }
+    }
   }
-}
 
-/* for navbar.tsx */
-.header{
-  position: fixed;
-  z-index: 100;
-  right: 50px;
-  top: 50px;
+  /* for navbar.tsx */
 
-  .menu{
-      width: 480px;
-      height: 650px;
-      background-color:#c9fd74;
-      border-radius: 25px;
-      position: relative;
+  .menu {
+    width: 480px;
+    height: 650px;
+    background-color: #c9fd74;
+    border-radius: 25px;
+    position: relative;
   }
-}
-
 }
