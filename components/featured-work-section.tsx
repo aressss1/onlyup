@@ -49,10 +49,10 @@ const FeaturedWork = () => {
                         >
                             Featured Work
                         </div>
-                        {/* <Button size="lg" variant="special" className='rounded-[4rem] opacity-80 ' >
+                        <Button size="lg" variant="special" className='rounded-[4rem] opacity-80 ' >
                             See all work
-                        </Button> */}
-                        <NormalButton label='See all work' href="/" />
+                        </Button>
+                        {/* <NormalButton label='See all work' href="/" /> */}
                     </div>
                 </div>
 

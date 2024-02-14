@@ -7,8 +7,8 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useScrollTop } from '@/hooks/use-scroll-top';
 
-import CustomButton from "./ui/buttons/custom-button";
 import Navlink from "./navlink";
+import MenuButton from "./ui/buttons/menu-button";
 
 const menu = {
     open: {
@@ -90,7 +90,7 @@ const Navbar = () => {
                             {isActive && <Navlink />}
                         </AnimatePresence>
                     </motion.div>
-                    <CustomButton isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
+                    <MenuButton isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
                 </div>
             </div>
         </div>

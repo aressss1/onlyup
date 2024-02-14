@@ -181,8 +181,8 @@ body {
     }
   }
 
-  /* For CustomButton.tsx */
-  .customButton {
+  /* For MenuButton.tsx */
+  .menuButton {
     position: absolute;
     z-index: 99999;
     top: -20px;
@@ -249,51 +249,6 @@ body {
         transform-origin: bottom center;
         transform: rotateX(-90deg) translateY(9px);
         opacity: 0;
-      }
-    }
-  }
-
-  /* For NormalButton.tsx  */
-  .normalButton {
-    position: absolute;
-    cursor: pointer;
-    border-radius: 25px;
-    overflow: hidden;
-    border-width: 1px;
-    border-color: black;
-
-    .slider {
-      position: relative;
-      width: 100%;
-      height: 100%;
-
-      .el {
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        p {
-          margin: 0px;
-        }
-        &:nth-of-type(2) {
-          background-color: white;
-          p {
-            color: black;
-          }
-        }
-        &:hover {
-          .perspectiveText {
-            transform: rotateX(90deg);
-            p {
-              &:nth-of-type(1) {
-                transform: translateY(-100%);
-                opacity: 0;
-              }
-              &:nth-of-type(2) {
-                opacity: 1;
-              }
-            }
-          }
-        }
       }
     }
   }

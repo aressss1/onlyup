@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
 
-interface CustmButtonProps {
+interface MenuButtonProps {
     isActive: boolean;
     toggleMenu: () => void;
 }
 
-export default function CustomButton({
+export default function MenuButton({
     isActive,
     toggleMenu
-}: CustmButtonProps) {
+}: MenuButtonProps) {
     return (
-        <div className="customButton">
+        <div className="menuButton">
             <motion.div
                 className="slider"
                 animate={{ top: isActive ? "-100%" : "0%" }}
