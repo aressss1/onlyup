@@ -1,23 +1,19 @@
 'use client'
 
-import { useRef } from 'react';
-import { useInView, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 const AboutSection = () => {
-    const body = useRef(null);
-
-    const isInView = useInView(body, {once: true, margin: "-55%"})
 
     return (
         <motion.div 
-            initial={{ opacity: 0, y: 25 }}
-            animate={ isInView ? { opacity: 1, y: 0 } : "" }
+            initial={{ opacity: 0, y: 45 }}
+            animate={ { opacity: 1, y: 0 }  }
             transition={{
             duration: 0.3,
             ease: [0.64, 0, 0.78, 0],
+            delay: 0.7
             }}
             id="about"
-            ref={body} 
             className="md:px-12 px-4 py-40 flex flex-col gap-10 text-left" 
         >
             <div className="text-sm font-normal opacity-80 uppercase " >
