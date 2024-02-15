@@ -41,7 +41,7 @@ function PerspectiveText({
     label: string
 }) {
     return (
-        <div className="perspectiveText">
+        <div className="normalPerspectiveText">
             <p>{label}</p>
             <p>{label}</p>
         </div>
