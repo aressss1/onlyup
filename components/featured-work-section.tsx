@@ -1,24 +1,38 @@
+'use client'
 
 import { Button } from './ui/button';
 
+import { useScroll, useTransform, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import NormalButton from './ui/buttons/normal-button';
+import { useRef } from 'react';
 
 
 const FeaturedWork = () => {
+    const container = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ['start end', 'end start']
+    
+    })
+
+    const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+
     const featuredProjectR1 = [
         {
             projextImageSrc: "/p-2.jpg",
             projectType: "Marketing Design",
             projectName: "Flam",
             projectLink: "/",
+            y: 0
         },
         {
             projextImageSrc: "/p-4.jpg",
             projectType: "Mockup Design",
             projectName: "Walden Watch",
             projectLink: "/",
+            y: 0
         }
     ]
 
@@ -28,17 +42,22 @@ const FeaturedWork = () => {
             projectType: "Mockup Design",
             projectName: "Rooney Mae",
             projectLink: "/",
+            y: lg
         },
         {
             projextImageSrc: "/p-1.jpg",
             projectType: "Branding",
             projectName: "Reedly C.",
             projectLink: "/",
+            y: lg
         }
     ]
 
     return (
-        <div id="work" className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" >
+        <div 
+            id="work"
+            ref={container} 
+            className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Work
             </div>
@@ -52,7 +71,6 @@ const FeaturedWork = () => {
                         <Button size="lg" variant="special" className='rounded-[4rem] opacity-80 ' >
                             See all work
                         </Button>
-                        {/* <NormalButton label='See all work' href="/" /> */}
                     </div>
                 </div>
 
@@ -61,7 +79,11 @@ const FeaturedWork = () => {
 
                         <div className='w-[100%] lg:mr-4' >
                             {featuredProjectR1.map((project) => (
-                                <div key={project.projectName} className='flex flex-col mb-12' >
+                                <motion.div 
+                                    key={project.projectName}
+                                    className='flex flex-col mb-12'
+                                    style={project.y as any}
+                                >
                                     <Link
                                         href={project.projectLink}
                                         className='md:h-[36rem] h-[23rem] rounded-[20px] overflow-hidden mb-2 relative '
@@ -87,13 +109,17 @@ const FeaturedWork = () => {
                                             </Button>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
 
                         <div className='w-[100%] lg:pl-4 lg:pt-8 ' >
                             {featuredProjectR2.map((project) => (
-                                <div key={project.projectName} className='flex flex-col mb-12' >
+                                <motion.div 
+                                    key={project.projectName} 
+                                    className='flex flex-col mb-12'
+                                    style={project.y as any} 
+                                >
                                     <Link
                                         href={project.projectLink}
                                         className='md:h-[36rem] h-[23rem] rounded-[20px] overflow-hidden mb-2 relative '
@@ -119,7 +145,7 @@ const FeaturedWork = () => {
                                             </Button>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             ))}
 
                         </div>
