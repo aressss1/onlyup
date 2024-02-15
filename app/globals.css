@@ -136,7 +136,7 @@ body {
   .menu {
     width: 480px;
     height: 650px;
-    background-color: #EF4242;
+    background-color: #ef4242;
     border-radius: 25px;
     position: absolute;
   }
@@ -165,8 +165,8 @@ body {
         color: black;
         font-size: 46px;
 
-        @media  (max-width: 768px) {
-          font-size: 34px 
+        @media (max-width: 768px) {
+          font-size: 34px;
         }
       }
     }
@@ -180,7 +180,7 @@ body {
       }
     }
   }
-  
+
   /* For MenuButton.tsx */
   .menuButton {
     position: absolute;
@@ -253,51 +253,53 @@ body {
     }
   }
 
-    /* For normalButton.tsx */
-    .noramlButton {
-      width: 161px;
-      height: 40px;
-      cursor: pointer;
-      border-radius: 25px;
-      overflow: hidden;
-      border-width: 1px;
-      border-color: black;
-  
-      .slider {
-        position: relative;
+  /* For normalButton.tsx */
+  .noramlButton {
+    position: absolute;
+    z-index: 99999;
+    top: -20px;
+    right: 8px;
+    width: 161px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 25px;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: black;
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .el {
         width: 100%;
         height: 100%;
-  
-        .el {
-          width: 100%;
-          height: 100%;
+        background-color: white;
+        p {
+          margin: 0px;
+        }
+        &:nth-of-type(2) {
           background-color: white;
           p {
-            margin: 0px;
+            color: black;
           }
-          &:nth-of-type(2) {
-            background-color: white;
+        }
+        &:hover {
+          .perspectiveText {
+            transform: rotateX(90deg);
             p {
-              color: black;
-            }
-          }
-          &:hover {
-            .perspectiveText {
-              transform: rotateX(90deg);
-              p {
-                &:nth-of-type(1) {
-                  transform: translateY(-100%);
-                  opacity: 0;
-                }
-                &:nth-of-type(2) {
-                  opacity: 1;
-                }
+              &:nth-of-type(1) {
+                transform: translateY(-100%);
+                opacity: 0;
+              }
+              &:nth-of-type(2) {
+                opacity: 1;
               }
             }
           }
         }
       }
     }
-  
-  
+  }
 }
