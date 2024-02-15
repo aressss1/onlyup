@@ -20,10 +20,26 @@ const Footer = () => {
                             <p className='pb-2 hover:text-[#ef4242]' >info@onlyup.com</p>
                         </div>
                     </div>
-                    <div className="flex gap-8 opacity-80  " >
-                        <Image src='/instagram.svg' alt='instagram' className='h-6 w-6 hover:text-[#ef4242] hover:opacity-100' />
-                        <Image src='/twitter.svg' alt='twitter' className='h-6 w-6 hover:text-[#ef4242]  hover:opacity-100' />
-                        <Image src='/linkedin.svg' alt='linkedin' className='h-6 w-6 hover:text-[#ef4242] hover:opacity-100' />
+                    <div className="flex gap-8   " >
+                        <Link
+                            href="/"
+                            className='opacity-80 hover:text-[#ef4242] hover:opacity-100 cursor-pointer '
+                        >
+                            <Image src='/instagram.svg' alt='instagram' className='h-6 w-6 ' />
+                        </Link>
+
+                        <Link
+                            href="/"
+                            className='opacity-80 hover:text-[#ef4242] hover:opacity-100 cursor-pointer '
+                        >
+                            <Image src='/twitter.svg' alt='twitter' className='h-6 w-6' />
+                        </Link>
+                        <Link
+                            href="/"
+                            className='opacity-80 hover:text-[#ef4242] hover:opacity-100 cursor-pointer '
+                        >
+                            <Image src='/linkedin.svg' alt='linkedin' className='h-6 w-6 ' />
+                        </Link>
                     </div>
                 </div>
 
@@ -41,7 +57,7 @@ const Footer = () => {
 
             <div className=" relative text-sm text-center py-4 opacity-70 " >
                 Copyright &copy; 2024 All rights reserved.
-                <div className='absolute right-0 top-2 text-xs opacity-55 hover:opacity-100 ' >
+                <div className='absolute right-7 top-4 text-xs opacity-85 hover:opacity-100 ' >
                     <Link href="/" >
                         Developed by Faizan Asghar
                     </Link>
