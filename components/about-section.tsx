@@ -1,8 +1,24 @@
+'use client'
+
+import { useRef } from 'react';
+import { useInView, motion } from 'framer-motion';
 
 const AboutSection = () => {
+    const body = useRef(null);
+
+    const isInView = useInView(body, {once: true, margin: "-75%"})
 
     return (
-        <div id="about" className="md:px-12 px-4 py-40 flex flex-col gap-10 text-left" >
+        <motion.div 
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+            duration: 0.3,
+            ease: [0.64, 0, 0.78, 0],
+            }}
+            id="about"
+            ref={body} 
+            className="md:px-12 px-4 py-40 flex flex-col gap-10 text-left" >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 About 
             </div>
@@ -12,7 +28,7 @@ const AboutSection = () => {
             <div className="lg:text-2xl text-base lg:w-[67rem] md:w-[29rem] opacity-70  " >
                 At our creative agency, we specialize in turning your unique ideas into captivating visual realities. With a passion for innovation, we bring your concepts to life, crafting designs that not only meet but exceed your expectations
             </div>
-        </div>
+        </motion.div>
     );
 }
 
