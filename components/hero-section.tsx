@@ -29,7 +29,7 @@ const HeroSection = () => {
                 className="bg-[url('/bg-2.jpg')] absolute top-0 opacity-50 h-[90vh] md:h-screen w-full object-cover "
             />
             <div className="py-5 h-[90vh] md:h-screen flex flex-col relative z-[10] justify-between gap-28 items-center "  >
-                <div className="flex flex-col items-center gap-5 my-auto pt-36 " >
+                <div className="flex flex-col items-center gap-3 my-auto pt-36 " >
                     {heroPhrases.map((phrase , i) => (
                         <div
                             key={i}
