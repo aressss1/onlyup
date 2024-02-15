@@ -11,7 +11,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div className="h-full bg-bg" >
+    <div className="h-full bg-bg customSelectColor " >
       <Navbar />
       <HeroSection />
       <Separator className="bg-[#C4C4C4]" />

@@ -23,20 +23,20 @@ const Footer = () => {
                     <div className="flex gap-8   " >
                         <Link
                             href="/"
-                            className='opacity-80 hover:text-[#ef4242] hover:opacity-100 cursor-pointer '
+                            className='opacity-80  hover:opacity-100 cursor-pointer '
                         >
                             <Image src='/instagram.svg' alt='instagram' className='h-6 w-6 ' />
                         </Link>
 
                         <Link
                             href="/"
-                            className='opacity-80 hover:text-[#ef4242] hover:opacity-100 cursor-pointer '
+                            className='opacity-80  hover:opacity-100 cursor-pointer '
                         >
                             <Image src='/twitter.svg' alt='twitter' className='h-6 w-6' />
                         </Link>
                         <Link
                             href="/"
-                            className='opacity-80 hover:text-[#ef4242] hover:opacity-100 cursor-pointer '
+                            className='opacity-80  hover:opacity-100 cursor-pointer '
                         >
                             <Image src='/linkedin.svg' alt='linkedin' className='h-6 w-6 ' />
                         </Link>

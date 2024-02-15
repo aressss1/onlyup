@@ -318,4 +318,10 @@ body {
       }
     }
   }
+
+  .customSelectColor {
+    ::selection {
+      background-color: #ef4242;
+    }
+  }
 }

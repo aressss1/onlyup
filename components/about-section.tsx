@@ -2,7 +2,7 @@
 const AboutSection = () => {
 
     return (
-        <div id="about" className="md:px-12 px-4 py-32 flex flex-col gap-8 text-left" >
+        <div id="about" className="md:px-12 px-4 py-40 flex flex-col gap-10 text-left" >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 About 
             </div>
