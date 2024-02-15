@@ -16,7 +16,7 @@ const NormalButton = ({
     const router = useRouter();
 
     return ( 
-        <div className="normalButton">
+        <div className="menuButton">
         <motion.div
             className="slider"
             // animate={{ top: isActive ? "-100%" : "0%" }}
@@ -41,7 +41,7 @@ function PerspectiveText({
     label: string
 }) {
     return (
-        <div className="normalPerspectiveText">
+        <div className="perspectiveText">
             <p>{label}</p>
             <p>{label}</p>
         </div>
