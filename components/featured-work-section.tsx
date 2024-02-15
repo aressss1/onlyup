@@ -17,7 +17,7 @@ const FeaturedWork = () => {
     
     })
 
-    const lg = useTransform(scrollYProgress, [0, 1], [100, -200]);
+    const y = useTransform(scrollYProgress, [0, 1], [100, -200]);
 
     const featuredProjectR1 = [
         {
@@ -114,7 +114,7 @@ const FeaturedWork = () => {
                                 <motion.div 
                                     key={project.projectName} 
                                     className='flex flex-col mb-12'
-                                    style={{y: lg}} 
+                                    style={{y: y}} 
                                 >
                                     <Link
                                         href={project.projectLink}
