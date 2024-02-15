@@ -17,6 +17,7 @@ const AboutSection = () => {
             transition={{
                 duration: 0.6,
                 ease: [0.64, 0, 0.78, 0],
+                delay: 0.5
             }}
             id="about"
             className="md:px-12 px-4 py-40 flex flex-col gap-10 text-left" 

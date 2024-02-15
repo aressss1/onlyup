@@ -56,18 +56,19 @@ const FeaturedWork = () => {
 
     return (
         <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false }}
-                variants={varaiant}
-                transition={{
-                    duration: 0.6,
-                    ease: [0.11, 0, 0.5, 0],
-                }}
-                id="work"
-                ref={container} 
-                className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" 
-            >
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false }}
+            variants={varaiant}
+            transition={{
+                duration: 0.6,
+                ease: [0.11, 0, 0.5, 0],
+                delay: 0.5
+            }}
+            id="work"
+            ref={container} 
+            className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" 
+        >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Work
             </div>
