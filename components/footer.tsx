@@ -1,11 +1,29 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import {  motion } from 'framer-motion';
 
 import { Separator } from './ui/separator';
-import Link from 'next/link';
 
 const Footer = () => {
+    const varaiant = {
+        visible: {opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
+    }
+
     return (
-        <div id="contact" className='bg-white text-black' >
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={varaiant}
+            transition={{
+                duration: 0.6,
+                ease: [0.11, 0, 0.5, 0],
+                delay: 0.4
+            }}        
+            id="contact" 
+            className='bg-white text-black' 
+        >
             <div className=" flex flex-col gap-12 py-24 md:px-12 px-4" >
                 <div className="text-sm font-normal opacity-80 uppercase " >
                     Contact
@@ -63,7 +81,7 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

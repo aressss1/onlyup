@@ -1,4 +1,6 @@
 import Image from "next/image";
+import {  motion } from 'framer-motion';
+
 
 const TestimonialsSection = () => {
     const reviews = [
@@ -18,8 +20,25 @@ const TestimonialsSection = () => {
         },
     ]
 
+    const varaiant = {
+        visible: {opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
+    }
+
     return (
-        <div id="testimonials" className="flex flex-col gap-8 md:px-12 px-4 py-20 " >
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={varaiant}
+            transition={{
+                duration: 0.6,
+                ease: [0.11, 0, 0.5, 0],
+                delay: 0.4
+            }}
+            id="testimonials" 
+            className="flex flex-col gap-8 md:px-12 px-4 py-20 " 
+        >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Testimonials
             </div>
@@ -44,7 +63,7 @@ const TestimonialsSection = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 }
 

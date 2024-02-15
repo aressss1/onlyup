@@ -58,12 +58,12 @@ const FeaturedWork = () => {
         <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             variants={varaiant}
             transition={{
                 duration: 0.6,
                 ease: [0.11, 0, 0.5, 0],
-                delay: 0.5
+                delay: 0.4
             }}
             id="work"
             ref={container} 
