@@ -17,7 +17,7 @@ const FeaturedWork = () => {
     
     })
 
-    const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+    const lg = useTransform(scrollYProgress, [0, 1], [100, -250]);
 
     const featuredProjectR1 = [
         {
