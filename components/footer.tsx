@@ -10,19 +10,19 @@ const Footer = () => {
                     Contact
                 </div>
 
-                <div className='flex flex-col md:flex-row gap-12 md:gap-0 justify-between' >
+                <div className='group flex flex-col md:flex-row gap-12 md:gap-0 justify-between' >
                     <div className='flex flex-col text-left gap-6' >
-                        <div className='text-base' >
+                        <div className='text-base group-hover:text-[#ef4242] ' >
                             Have a project? Let&apos; Talk.
                         </div>
-                        <div className='text-3xl md:text-5xl border-b-4 border-black ' >
+                        <div className='text-3xl md:text-5xl border-b-4 border-black group-hover:border-[#ef4242] ' >
                             <p className='pb-2' >info@onlyup.com</p>
                         </div>
                     </div>
                     <div className="flex gap-8 opacity-80  " >
-                        <Image src='/instagram.svg' alt='instagram' className='h-6 w-6' />
-                        <Image src='/twitter.svg' alt='twitter' className='h-6 w-6' />
-                        <Image src='/linkedin.svg' alt='linkedin' className='h-6 w-6' />
+                        <Image src='/instagram.svg' alt='instagram' className='h-6 w-6 hover:text-[#ef4242] hover:opacity-100' />
+                        <Image src='/twitter.svg' alt='twitter' className='h-6 w-6 hover:text-[#ef4242]  hover:opacity-100' />
+                        <Image src='/linkedin.svg' alt='linkedin' className='h-6 w-6 hover:text-[#ef4242] hover:opacity-100' />
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className='text-base' >
                         Job Applications
                     </div>
-                    <div className='tetx-base opacity-60' >
+                    <div className='tetx-base opacity-60 hover:text-opacity-100' >
                         apply@onlyup.com
                     </div>
                 </div>

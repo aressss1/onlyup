@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Testimonials
             </div>
-            <div className=" lg:px-[11rem] md:px-16 py-10 flex lg:flex-row flex-col gap-6 " >
+            <div className=" lg:px-[12rem] md:px-16 py-10 flex lg:flex-row flex-col gap-6 " >
                 {reviews.map((review) => (
                     <div key={review.clientName} className="bg-white rounded-xl md:p-12 p-6 " >
                         <p className="text-2xl opacity-70 tracking-widest " >
