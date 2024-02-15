@@ -254,7 +254,7 @@ body {
   }
   /* For MenuButton.tsx */
   .normalButton {
-    width: 100px;
+    width: 160px;
     height: 40px;
     cursor: pointer;
     border-radius: 25px;

@@ -65,9 +65,6 @@ const FeaturedWork = () => {
                         >
                             Featured Work
                         </div>
-                        {/* <Button size="lg" variant="special" className='rounded-[4rem] opacity-80 ' >
-                            See all work
-                        </Button> */}
                         <NormalButton label='See All Work' href="/" />
                     </div>
                 </div>
@@ -102,10 +99,7 @@ const FeaturedWork = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <Button size="lg" variant="special" className=' rounded-[4rem]  opacity-80 ' >
-                                                View case study
-                                            </Button>
-                                            {/* <NormalButton label='See All Work' href='/'  /> */}
+                                            <NormalButton label='View Case Study' href="/" />
                                         </div>
                                     </div>
                                 </motion.div>
@@ -139,9 +133,7 @@ const FeaturedWork = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <Button size="lg" variant="special" className=' rounded-[4rem] opacity-80 ' >
-                                                View case study
-                                            </Button>
+                                             <NormalButton label='View Case Study' href="/" />
                                         </div>
                                     </div>
                                 </motion.div>
