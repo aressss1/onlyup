@@ -10,13 +10,13 @@ const Footer = () => {
                     Contact
                 </div>
 
-                <div className='group flex flex-col md:flex-row gap-12 md:gap-0 justify-between' >
+                <div className=' flex flex-col md:flex-row gap-12 md:gap-0 justify-between' >
                     <div className='flex flex-col text-left gap-6' >
-                        <div className='text-base group-hover:text-[#ef4242] ' >
+                        <div className='text-base  ' >
                             Have a project? Let&apos; Talk.
                         </div>
-                        <div className='text-3xl md:text-5xl border-b-4 border-black group-hover:border-[#ef4242] ' >
-                            <p className='pb-2' >info@onlyup.com</p>
+                        <div className='text-3xl md:text-5xl border-b-4 border-black hover:border-[#ef4242] ' >
+                            <p className='pb-2 hover:text-[#ef4242]' >info@onlyup.com</p>
                         </div>
                     </div>
                     <div className="flex gap-8 opacity-80  " >
@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className='text-base' >
                         Job Applications
                     </div>
-                    <div className='tetx-base opacity-60 hover:text-opacity-100' >
+                    <div className='text-base opacity-60 hover:text-opacity-100 hover-text-[#ef4242]' >
                         apply@onlyup.com
                     </div>
                 </div>
