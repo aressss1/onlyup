@@ -319,6 +319,7 @@ body {
     }
   }
 
+  /* For text selection  */
   .customSelectColor {
     ::selection {
       background-color: #ef4242;
