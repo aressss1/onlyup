@@ -63,7 +63,7 @@ const HeroSection = () => {
                      initial={{ opacity: 0, y: 45 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{
-                       duration: 0.2,
+                       duration: 0.4,
                        ease: [0.83, 0, 0.17, 1],
                        delay: 0.6
                      }}

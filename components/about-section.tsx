@@ -3,15 +3,20 @@
 import {  motion } from 'framer-motion';
 
 const AboutSection = () => {
+    const varaiant = {
+        visible: {opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
+    }
 
     return (
         <motion.div 
-            initial={{ opacity: 0, y: 45 }}
-            animate={ { opacity: 1, y: 0 }  }
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={varaiant}
             transition={{
-            duration: 0.3,
-            ease: [0.64, 0, 0.78, 0],
-            delay: 0.7
+                duration: 0.6,
+                ease: [0.64, 0, 0.78, 0],
             }}
             id="about"
             className="md:px-12 px-4 py-40 flex flex-col gap-10 text-left" 
