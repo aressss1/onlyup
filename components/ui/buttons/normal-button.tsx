@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 interface NormalButtonProps {
     label: string,
     href: string,
-    toggleMenu: () => void
+    toggleMenu?: () => void
 }
 
 const NormalButton = ({
@@ -26,7 +26,7 @@ const NormalButton = ({
         >
             <div
                 className="el"
-                onClick={() => { toggleMenu() }}
+                // onClick={() => { toggleMenu() }}
             >
                 <PerspectiveText label={label} />
             </div>

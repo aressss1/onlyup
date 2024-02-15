@@ -104,7 +104,7 @@ const FeaturedWork = () => {
                                             {/* <Button size="lg" variant="special" className=' rounded-[4rem]  opacity-80 ' >
                                                 View case study
                                             </Button> */}
-                                            <NormalButton label='See All Work' href='/' toggleMenu={handleClick} isA />
+                                            <NormalButton label='See All Work' href='/'  />
                                         </div>
                                     </div>
                                 </motion.div>
