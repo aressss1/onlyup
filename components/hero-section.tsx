@@ -20,9 +20,9 @@ const heroPhrases = [
 
 
 const HeroSection = () => {
-    const body = useRef(null);
+    // const body = useRef(null);
 
-    const isInView = useInView(body, {once: true, margin: "-75%"})
+    // const isInView = useInView(body, {once: true, margin: "-75%"})
 
 
     const animation = {
@@ -32,7 +32,7 @@ const HeroSection = () => {
 
 
     return (
-        <div ref={body} className="relative" >
+        <div className="relative" >
             <div
                 className="bg-[url('/bg-2.jpg')] absolute top-0 opacity-50 h-[90vh] md:h-screen w-full object-cover "
             />
@@ -49,7 +49,7 @@ const HeroSection = () => {
                             custom={i}  
                             variants={animation} 
                             initial="initial" 
-                            animate={isInView ? "enter" : ""} 
+                            animate={ "enter" } 
                         >
                             {phrase}
                         </motion.p>
