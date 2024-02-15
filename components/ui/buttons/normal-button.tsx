@@ -18,6 +18,7 @@ const NormalButton = ({
     return ( 
         <div className="normalButton">
         <motion.div
+            className="slider"
             // animate={{ top: isActive ? "-100%" : "0%" }}
             // transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}
         >

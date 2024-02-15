@@ -183,10 +183,10 @@ body {
 
   /* For normalButton.tsx */
   .normalButton {
-    /* position: absolute; */
+    position: absolute;
     z-index: 99999;
-    /* top: 52px; */
-    /* left: 0px; */
+    top: 52px;
+    left: 0px;
     width: 163px;
     height: 40px;
     cursor: pointer;
@@ -196,34 +196,40 @@ body {
     border-color: #000;
     opacity: 0.8;
     text-align: center;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: white; */
 
-    .el {
+    .slider {
+      position: relative;
       width: 100%;
       height: 100%;
-      background-color: white;
-      p {
-        margin: 0px;
-      }
-      &:nth-of-type(2) {
+
+      .el {
+        width: 100%;
+        height: 100%;
         background-color: white;
         p {
-          color: black;
+          margin: 0px;
         }
-      }
-      &:hover {
-        .perspectiveText {
-          transform: rotateX(90deg);
+        &:nth-of-type(2) {
+          background-color: white;
           p {
-            &:nth-of-type(1) {
-              transform: translateY(-100%);
-              opacity: 0;
-            }
-            &:nth-of-type(2) {
-              opacity: 1;
+            color: black;
+          }
+        }
+        &:hover {
+          .perspectiveText {
+            transform: rotateX(90deg);
+            p {
+              &:nth-of-type(1) {
+                transform: translateY(-100%);
+                opacity: 0;
+              }
+              &:nth-of-type(2) {
+                opacity: 1;
+              }
             }
           }
         }
