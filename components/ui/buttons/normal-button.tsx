@@ -18,7 +18,7 @@ const NormalButton = ({
     const router = useRouter();
 
     return ( 
-        <div className="menuButton">
+        <div className="normalButton">
         <motion.div
             className="slider"
             // animate={{ top: isActive ? "-100%" : "0%" }}

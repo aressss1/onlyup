@@ -255,10 +255,10 @@ body {
 
   /* For normalButton.tsx */
   .noramlButton {
-    position: absolute;
+    /* position: absolute;
     z-index: 99999;
     top: -20px;
-    right: 8px;
+    right: 8px; */
     width: 161px;
     height: 40px;
     cursor: pointer;
