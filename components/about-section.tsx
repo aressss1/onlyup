@@ -12,7 +12,7 @@ const AboutSection = () => {
         <motion.div 
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             variants={varaiant}
             transition={{
                 duration: 0.6,
