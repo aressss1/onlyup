@@ -1,7 +1,7 @@
 'use client'
 
 import localFont from 'next/font/local'
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import { cn } from "@/lib/utils";
 
@@ -20,10 +20,6 @@ const heroPhrases = [
 
 
 const HeroSection = () => {
-    // const body = useRef(null);
-
-    // const isInView = useInView(body, {once: true, margin: "-75%"})
-
 
     const animation = {
         initial: {y: "100%"},

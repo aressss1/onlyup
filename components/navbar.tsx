@@ -63,7 +63,15 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className='flex justify-center md:px-12 px-4' >
+        <motion.div 
+            className='flex justify-center md:px-12 px-4'
+            initial={{ opacity: 0, y: -25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeIn",
+            }}
+            >
             <div
                 className={cn(
                     "py-[4px] z-[999] border rounded-[4rem] border-black flex justify-between items-center fixed lg:w-[79rem] md:w-[44rem] w-[19rem] top-[20px]",
@@ -93,7 +101,7 @@ const Navbar = () => {
                     <MenuButton isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
