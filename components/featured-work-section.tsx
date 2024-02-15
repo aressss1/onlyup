@@ -1,11 +1,12 @@
 'use client'
 
-import { Button } from './ui/button';
+import { Button } from './ui/buttons/button';
 
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRef } from 'react';
+import NormalButton from './ui/buttons/normal-button';
 
 
 const FeaturedWork = () => {
@@ -100,9 +101,10 @@ const FeaturedWork = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <Button size="lg" variant="special" className=' rounded-[4rem]  opacity-80 ' >
+                                            {/* <Button size="lg" variant="special" className=' rounded-[4rem]  opacity-80 ' >
                                                 View case study
-                                            </Button>
+                                            </Button> */}
+                                            <NormalButton label='See All Work' href='/' toggleMenu={handleClick} isA />
                                         </div>
                                     </div>
                                 </motion.div>
