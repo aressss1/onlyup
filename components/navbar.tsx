@@ -69,7 +69,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.2,
-              ease: "easeIn",
+              ease: [0.64, 0, 0.78, 0],
             }}
             >
             <div
