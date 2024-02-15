@@ -16,15 +16,11 @@ const NormalButton = ({
     const router = useRouter();
 
     return ( 
-        <div className="menuButton">
+        <div className="normalButton">
         <motion.div
-            className="slider"
-            // animate={{ top: isActive ? "-100%" : "0%" }}
-            // transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}
         >
             <div
                 className="el"
-                // onClick={() => { toggleMenu() }}
             >
                 <PerspectiveText label={label} />
             </div>
@@ -41,7 +37,7 @@ function PerspectiveText({
     label: string
 }) {
     return (
-        <div className="perspectiveText">
+        <div className="normalPerspectiveText">
             <p>{label}</p>
             <p>{label}</p>
         </div>
