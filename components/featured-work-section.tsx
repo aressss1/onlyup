@@ -25,14 +25,12 @@ const FeaturedWork = () => {
             projectType: "Marketing Design",
             projectName: "Flam",
             projectLink: "/",
-            y: 0
         },
         {
             projextImageSrc: "/p-4.jpg",
             projectType: "Mockup Design",
             projectName: "Walden Watch",
             projectLink: "/",
-            y: 0
         }
     ]
 
@@ -42,14 +40,12 @@ const FeaturedWork = () => {
             projectType: "Mockup Design",
             projectName: "Rooney Mae",
             projectLink: "/",
-            y: lg
         },
         {
             projextImageSrc: "/p-1.jpg",
             projectType: "Branding",
             projectName: "Reedly C.",
             projectLink: "/",
-            y: lg
         }
     ]
 
@@ -82,7 +78,7 @@ const FeaturedWork = () => {
                                 <motion.div 
                                     key={project.projectName}
                                     className='flex flex-col mb-12'
-                                    style={project.y as any}
+                                    style={{y: 0}}
                                 >
                                     <Link
                                         href={project.projectLink}
@@ -118,7 +114,7 @@ const FeaturedWork = () => {
                                 <motion.div 
                                     key={project.projectName} 
                                     className='flex flex-col mb-12'
-                                    style={project.y as any} 
+                                    style={{y: lg}} 
                                 >
                                     <Link
                                         href={project.projectLink}
