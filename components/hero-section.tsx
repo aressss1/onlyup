@@ -28,7 +28,7 @@ const HeroSection = () => {
             transition: {
                 duration: 0.75, 
                 ease: [0.33, 1, 0.68, 1],  
-                delay: 0.4 * i
+                delay: 0.3 * i
             }})
       }
 
@@ -59,9 +59,18 @@ const HeroSection = () => {
                     ))}
                 </div>
 
-                <div>
+                <motion.div
+                     initial={{ opacity: 0, x: -25 }}
+                     animate={{ opacity: 1, x: 0 }}
+                     transition={{
+                       duration: 0.2,
+                       ease: "easeIn",
+                       delay: 0.6
+                     }}
+
+                >
                     <ExploreButton />
-                </div>
+                </motion.div>
             </div>
         </div>
     );
