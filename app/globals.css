@@ -322,7 +322,6 @@ body {
   .customSelectColor {
     ::selection {
       background-color: #ef4242;
-      opacity: 1;
     }
   }
 }
