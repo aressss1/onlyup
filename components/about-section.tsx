@@ -11,14 +11,15 @@ const AboutSection = () => {
     return (
         <motion.div 
             initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={ isInView ? { opacity: 1, y: 0 } : "" }
             transition={{
             duration: 0.3,
             ease: [0.64, 0, 0.78, 0],
             }}
             id="about"
             ref={body} 
-            className="md:px-12 px-4 py-40 flex flex-col gap-10 text-left" >
+            className="md:px-12 px-4 py-40 flex flex-col gap-10 text-left" 
+        >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 About 
             </div>
