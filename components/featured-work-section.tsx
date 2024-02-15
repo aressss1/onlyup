@@ -1,11 +1,10 @@
 'use client'
 
-import { Button } from './ui/buttons/button';
-
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRef } from 'react';
+
 import NormalButton from './ui/buttons/normal-button';
 
 
@@ -50,11 +49,25 @@ const FeaturedWork = () => {
         }
     ]
 
+    const varaiant = {
+        visible: {opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
+    }
+
     return (
-        <div 
-            id="work"
-            ref={container} 
-            className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" >
+        <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+                variants={varaiant}
+                transition={{
+                    duration: 0.6,
+                    ease: [0.11, 0, 0.5, 0],
+                }}
+                id="work"
+                ref={container} 
+                className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" 
+            >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Work
             </div>
@@ -144,7 +157,7 @@ const FeaturedWork = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
