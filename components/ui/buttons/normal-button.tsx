@@ -7,18 +7,16 @@ import { motion } from 'framer-motion';
 interface NormalButtonProps {
     label: string,
     href: string,
-    toggleMenu?: () => void
 }
 
 const NormalButton = ({
     label,
     href,
-    toggleMenu
 }: NormalButtonProps) => {
     const router = useRouter();
 
     return ( 
-        <div className="normalButton">
+        <div className="menuButton">
         <motion.div
             className="slider"
             // animate={{ top: isActive ? "-100%" : "0%" }}
@@ -30,12 +28,6 @@ const NormalButton = ({
             >
                 <PerspectiveText label={label} />
             </div>
-            {/* <div
-                className="el"
-                onClick={() => { toggleMenu() }}
-            >
-                <PerspectiveText label={label} />
-            </div> */}
         </motion.div>
     </div>
      );
