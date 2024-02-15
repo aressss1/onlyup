@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { Separator } from './ui/separator';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -30,7 +31,7 @@ const Footer = () => {
                     <div className='text-base' >
                         Job Applications
                     </div>
-                    <div className='text-base opacity-60 hover:text-opacity-100 hover-text-[#ef4242]' >
+                    <div className='text-base opacity-60 hover:opacity-100 hover:text-[#ef4242]' >
                         apply@onlyup.com
                     </div>
                 </div>
@@ -38,8 +39,13 @@ const Footer = () => {
 
             <Separator className='bg-[#C4C4C4]' />
 
-            <div className="text-sm text-center py-4 opacity-70 " >
+            <div className=" relative text-sm text-center py-4 opacity-70 " >
                 Copyright &copy; 2024 All rights reserved.
+                <div className='absolute right-0 top-2 text-xs opacity-55 hover:opacity-100 ' >
+                    <Link href="/" >
+                        Developed by Faizan Asghar
+                    </Link>
+                </div>
             </div>
         </div>
     );
