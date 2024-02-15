@@ -1,11 +1,12 @@
 'use client'
 
 import localFont from 'next/font/local'
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 import { cn } from "@/lib/utils";
 
 import ExploreButton from "./explore-button";
+import { useRef } from 'react';
 
 const font = localFont({
     src: '../public/fonts/GT-Super-Display-Medium-Trial.otf',
@@ -19,6 +20,11 @@ const heroPhrases = [
 
 
 const HeroSection = () => {
+    const body = useRef(null);
+
+    const isInView = useInView(body, {once: true, margin: "-75%"})
+
+
     const animation = {
         initial: {y: "100%"},
         enter: (i: number) => ({y: "0", transition: {duration: 0.75, ease: [0.33, 1, 0.68, 1],  delay: 0.075 * i}})
@@ -26,7 +32,7 @@ const HeroSection = () => {
 
 
     return (
-        <div className="relative" >
+        <div ref={body} className="relative" >
             <div
                 className="bg-[url('/bg-2.jpg')] absolute top-0 opacity-50 h-[90vh] md:h-screen w-full object-cover "
             />
@@ -43,7 +49,7 @@ const HeroSection = () => {
                             custom={i}  
                             variants={animation} 
                             initial="initial" 
-                            animate={"enter"} 
+                            animate={isInView ? "enter" : ""} 
                         >
                             {phrase}
                         </motion.p>
