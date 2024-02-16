@@ -25,7 +25,7 @@ const ServicesSection = () => {
 
     const varaiant1 = {
         visible: {opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: "25%" },
+        hidden: { opacity: 0, y: 25 },
     }
 
     const animation = {
@@ -33,9 +33,9 @@ const ServicesSection = () => {
         enter: (i: number) => ({
             y: "0", 
             transition: {
-                duration: 0.75, 
+                duration: 0.5, 
                 ease: [0.33, 1, 0.68, 1],  
-                delay: 0.4 * i
+                delay: 0.6 * i
             }})
       }
 

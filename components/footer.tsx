@@ -9,7 +9,7 @@ import { Separator } from './ui/separator';
 const Footer = () => {
     const varaiant = {
         visible: {opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: "25%" },
+        hidden: { opacity: 0, y: 25 },
     }
 
     return (
