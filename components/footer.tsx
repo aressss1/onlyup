@@ -13,20 +13,19 @@ const Footer = () => {
     }
 
     return (
-        <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={varaiant}
-            transition={{
-                duration: 0.6,
-                ease: [0.11, 0, 0.5, 0],
-                delay: 0.4
-            }}        
-            id="contact" 
-            className='bg-white text-black' 
-        >
-            <div className=" flex flex-col gap-12 py-24 md:px-12 px-4" >
+        <div id="contact" className='bg-white text-black' >
+            <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={varaiant}
+                transition={{
+                    duration: 0.6,
+                    ease: [0.11, 0, 0.5, 0],
+                    delay: 0.4
+                }}    
+                className=" flex flex-col gap-12 py-24 md:px-12 px-4" 
+            >
                 <div className="text-sm font-normal opacity-80 uppercase " >
                     Contact
                 </div>
@@ -71,11 +70,11 @@ const Footer = () => {
                         apply@onlyup.com
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             <Separator className='bg-[#C4C4C4]' />
 
-            <div className=" relative text-sm text-center py-4 opacity-70 " >
+            <div className=" relative text-sm text-left md:text-center py-4 opacity-70 " >
                 Copyright &copy; 2024 All rights reserved.
                 <div className='absolute right-7 top-4 text-xs opacity-85 hover:opacity-100 ' >
                     <Link href="/" >
@@ -83,7 +82,7 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 }
 
