@@ -25,7 +25,7 @@ const ServicesSection = () => {
 
     const varaiant1 = {
         visible: {opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 25 },
+        hidden: { opacity: 0, y: "25%" },
     }
 
     const animation = {
@@ -58,23 +58,21 @@ const ServicesSection = () => {
             </div>
             <div className="flex flex-col lg:gap-14 gap-12" >
                 {services.map((service , i) => (
-                    <motion.div 
-                        custom={i}  
-                        variants={animation} 
-                        initial="initial" 
-                        animate={ "enter" } 
-                        key={service.type} 
-                        className="group overflow-hidden " 
+                    <div key={service.type} className="group overflow-hidden " 
                     >
-                        <div
+                        <motion.div
+                            custom={i}  
+                            variants={animation} 
+                            initial="initial" 
+                            animate={ "enter" }     
                             className="lg:text-6xl md:text-4xl text-xl text-black group-hover:text-[#ef4242] flex items-center gap-2" 
                         >
                             {service.type}
                             <ArrowUpRight
                                 className=" group-hover:text-[#ef4242] opacity-0 group-hover:opacity-100 lg:w-20 lg:h-20 md:w-16 w-8 h-12 stroke-[1.5] " 
                             />
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    </div>
                 ))}
             </div>
         </motion.div>
