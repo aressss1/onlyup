@@ -50,7 +50,7 @@ const HeroSection = () => {
                             custom={i}  
                             variants={animation} 
                             initial="initial" 
-                            animate={ "enter" } 
+                            animate="enter"  
                         >
                             {phrase}
                         </motion.p>
