@@ -35,7 +35,7 @@ const ServicesSection = () => {
             transition: {
                 duration: 0.5, 
                 ease: [0.33, 1, 0.68, 1],  
-                delay: 0.6 * i
+                delay: 0.5 * i
             }})
       }
 
@@ -63,6 +63,7 @@ const ServicesSection = () => {
                         <motion.div
                             custom={i}  
                             variants={animation} 
+                            viewport={{ once: true }}
                             initial="initial" 
                             whileInView="enter"     
                             className="lg:text-6xl md:text-4xl text-xl text-black group-hover:text-[#ef4242] flex items-center gap-2" 

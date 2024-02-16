@@ -63,7 +63,7 @@ const FeaturedWork = () => {
             transition={{
                 duration: 0.6,
                 ease: [0.11, 0, 0.5, 0],
-                delay: 0.4
+                delay: 0.5
             }}
             id="work"
             ref={container} 
