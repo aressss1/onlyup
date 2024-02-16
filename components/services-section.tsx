@@ -64,7 +64,7 @@ const ServicesSection = () => {
                             custom={i}  
                             variants={animation} 
                             initial="initial" 
-                            animate={ "enter" }     
+                            whileInView="enter"     
                             className="lg:text-6xl md:text-4xl text-xl text-black group-hover:text-[#ef4242] flex items-center gap-2" 
                         >
                             {service.type}
