@@ -67,7 +67,7 @@ const FeaturedWork = () => {
             }}
             id="work"
             ref={container} 
-            className="md:px-12 px-4 py-20 flex flex-col gap-8 text-left" 
+            className="md:px-12 px-4 py-28 flex flex-col gap-8 text-left" 
         >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Work

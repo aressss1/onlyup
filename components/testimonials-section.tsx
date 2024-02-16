@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
                 delay: 0.4
             }}
             id="testimonials" 
-            className="flex flex-col gap-8 md:px-12 px-4 py-20 " 
+            className="flex flex-col gap-8 md:px-12 px-4 py-28 " 
         >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Testimonials

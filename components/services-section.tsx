@@ -51,7 +51,7 @@ const ServicesSection = () => {
                 delay: 0.4
             }} 
             id="services" 
-            className="flex flex-col text-left lg:gap-16 gap-12 py-12 md:px-12 px-4" 
+            className="flex flex-col text-left lg:gap-16 gap-12 py-28 md:px-12 px-4" 
         >
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Services
