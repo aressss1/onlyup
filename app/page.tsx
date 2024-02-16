@@ -14,33 +14,33 @@ import Lenis from "@studio-freight/lenis/types";
 
 
 export default function Home() {
-  useEffect( () => {
+  useEffect(() => {
     const lenis = new Lenis()
-  
+
     const raf = (time: number) => {
-  
+
       lenis.raf(time)
-  
+
       requestAnimationFrame(raf)
-  
+
     }
-  
+
     requestAnimationFrame(raf)
   }, [])
 
   return (
     <div className="h-full bg-bg customSelectColor " >
-      <Navbar />
-      <HeroSection />
-      <Separator className="bg-[#C4C4C4]" />
-      <AboutSection />
-      <Separator className="bg-[#C4C4C4]" />
-      <FeaturedWork />
-      <Separator className="bg-[#C4C4C4]" />
-      <ServicesSection />
-      <Separator className="bg-[#C4C4C4]" />
-      <TestimonialsSection />
-      <Footer />
+        <Navbar />
+        <HeroSection />
+        <Separator className="bg-[#C4C4C4]" />
+        <AboutSection />
+        <Separator className="bg-[#C4C4C4]" />
+        <FeaturedWork />
+        <Separator className="bg-[#C4C4C4]" />
+        <ServicesSection />
+        <Separator className="bg-[#C4C4C4]" />
+        <TestimonialsSection />
+        <Footer />
     </div>
   );
 }
