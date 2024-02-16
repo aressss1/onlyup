@@ -16,7 +16,7 @@ const AboutSection = () => {
             variants={varaiant}
             transition={{
                 duration: 0.6,
-                ease: [0.64, 0, 0.78, 0],
+                ease: "easeInOut",
                 delay: 0.5
             }}
             id="about"

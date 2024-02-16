@@ -62,7 +62,7 @@ const FeaturedWork = () => {
             variants={varaiant}
             transition={{
                 duration: 0.6,
-                ease: [0.11, 0, 0.5, 0],
+                ease: "easeInOut",
                 delay: 0.5
             }}
             id="work"
