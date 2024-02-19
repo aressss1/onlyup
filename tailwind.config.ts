@@ -25,10 +25,6 @@ const config = {
       },
     },
     extend: {
-      animationscroll: {
-        scroll:
-          "scroll var(--animationscroll-duration, 40s) var(--animationscroll-direction, forwards) linear infinite",
-      },
       colors: {
         bg: "#f9f5f5",
         border: "hsl(var(--border))",
@@ -88,6 +84,8 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
   },
