@@ -70,7 +70,7 @@ const ServicesSection = () => {
                         >
                             {service.type}
                             <ArrowUpRight
-                                className=" group-hover:text-[#ef4242] opacity-0 group-hover:opacity-100 lg:w-20 lg:h-20 md:w-16 w-8 h-16 stroke-[1.5] " 
+                                className=" group-hover:text-[#ef4242] opacity-0 group-hover:opacity-100 lg:w-20 lg:h-20 md:w-16 w-12 h-16 stroke-[1.5] " 
                             />
                         </motion.div>
                     </div>
