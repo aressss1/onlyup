@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
             transition={{
                 duration: 0.6,
                 ease: "backInOut",
-                delay: 0.7
+                delay: 0.9
             }}
             id="testimonials" 
             className="flex flex-col gap-8 md:px-12 px-4 py-28 " 
