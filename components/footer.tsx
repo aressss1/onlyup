@@ -75,9 +75,9 @@ const Footer = () => {
 
             <Separator className='bg-[#C4C4C4]' />
 
-            <div className=" flex justify-center flex-col md:flex-row gap-7 md:gap-0 text-sm text-center py-4 opacity-70 " >
+            <div className=" flex justify-center flex-col md:flex-row  text-sm text-center py-4 opacity-70 " >
                 Copyright &copy; 2024 All rights reserved.
-                <div className='self-end text-xs opacity-85 hover:opacity-100 ' >
+                <div className='hidden md:self-end text-xs opacity-85 hover:opacity-100 ' >
                     <Link href="/" >
                         Developed by Faizan Asghar
                     </Link>
