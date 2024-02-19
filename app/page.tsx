@@ -29,7 +29,9 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="h-full bg-bg customSelectColor " >
+    <div 
+      className="h-full bg-bg customSelectColor scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 " 
+    >
         <Navbar />
         <HeroSection />
         <Separator className="bg-[#C4C4C4]" />
