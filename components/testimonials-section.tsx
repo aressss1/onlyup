@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
             transition={{
                 duration: 0.6,
                 ease: [0.11, 0, 0.5, 0],
-                delay: 0.4
+                delay: 0.7
             }}
             id="testimonials" 
             className="flex flex-col gap-8 md:px-12 px-4 py-28 " 
@@ -44,10 +44,10 @@ const TestimonialsSection = () => {
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Testimonials
             </div>
-            <div className=" lg:px-[12rem] md:px-16 py-10 flex lg:flex-row flex-col gap-6 " >
+            <div className=" lg:px-[16rem] md:px-16 py-10 flex lg:flex-row flex-col gap-6 " >
                 {reviews.map((review) => (
                     <div key={review.clientName} className="bg-white rounded-xl md:p-12 p-6 " >
-                        <p className="text-2xl opacity-70 tracking-widest " >
+                        <p className="text-2xl opacity-60  " >
                             &quot;{review.review}&quot;
                         </p>
                         <div className="lg:mt-10 mt-14 flex" >
