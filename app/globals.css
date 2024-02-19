@@ -326,6 +326,7 @@ body {
     }
   }
 
+  /* for Footer.tsx */
   .border-container {
     position: relative;
   }

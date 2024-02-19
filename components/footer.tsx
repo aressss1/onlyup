@@ -35,7 +35,7 @@ const Footer = () => {
                         <div className='text-base ' >
                             Have a project? Let&apos; Talk.
                         </div>
-                        <div className='text-4xl md:text-5xl border-container  ' >
+                        <div className='text-3xl md:text-5xl border-container  ' >
                             <p className='pb-2' >info@onlyup.com</p>
                             <div className='border-b-[6px] border-black border-transition '/>
                         </div>
@@ -67,7 +67,7 @@ const Footer = () => {
                     <div className='text-base' >
                         Job Applications
                     </div>
-                    <div className='text-base opacity-60 hover:opacity-100 hover:text-[#ef4242]' >
+                    <div className='text-base opacity-60 hover:opacity-100 ' >
                         apply@onlyup.com
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import { cn } from "@/lib/utils";
 
-import ExploreButton from "./explore-button";
+import ExploreButton from "./ui/buttons/explore-button";
 
 const font = localFont({
     src: '../public/fonts/GT-Super-Display-Medium-Trial.otf',

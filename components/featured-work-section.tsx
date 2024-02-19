@@ -3,13 +3,19 @@
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import NormalButton from './ui/buttons/normal-button';
 
 
 const FeaturedWork = () => {
     const container = useRef(null);
+    
+    const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+
+    const checkBreakpoint = () => {
+        setIsLargeScreen(window.innerWidth >= 1024);
+    };
 
     const { scrollYProgress } = useScroll({
         target: container,
@@ -53,6 +59,16 @@ const FeaturedWork = () => {
         visible: {opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 25 },
     }
+
+    useEffect(() => {
+        checkBreakpoint();
+
+        window.addEventListener('resize', checkBreakpoint);
+
+        return () => {
+            window.removeEventListener('resize', checkBreakpoint);
+        };
+    }, []);
 
     return (
         <motion.div
@@ -125,7 +141,7 @@ const FeaturedWork = () => {
                                 <motion.div 
                                     key={project.projectName} 
                                     className='flex flex-col mb-12'
-                                    style={{y: y}} 
+                                    style={{ y: isLargeScreen ? y : 0 }} 
                                 >
                                     <Link
                                         href={project.projectLink}
