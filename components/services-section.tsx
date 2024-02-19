@@ -66,7 +66,7 @@ const ServicesSection = () => {
                             viewport={{ once: true }}
                             initial="initial" 
                             whileInView="enter"     
-                            className="lg:text-6xl md:text-4xl text-xl text-black group-hover:text-[#ef4242] flex items-center gap-2" 
+                            className="lg:text-6xl md:text-4xl text-2xl text-black group-hover:text-[#ef4242] flex items-center gap-2" 
                         >
                             {service.type}
                             <ArrowUpRight

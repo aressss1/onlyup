@@ -44,7 +44,7 @@ const HeroSection = () => {
                             key={i}
                             className={cn(
                             font.className,
-                            "lg:text-7xl md:text-5xl  text-2xl lg:leading-[5rem] lg:w-[730px] md:w-[565px] w-[263px] text-center overflow-hidden "
+                            "lg:text-7xl md:text-5xl text-3xl lg:leading-[5rem] lg:w-[730px] md:w-[565px] w-[263px] text-center overflow-hidden "
                     )}>
                         <motion.p 
                             custom={i}  
