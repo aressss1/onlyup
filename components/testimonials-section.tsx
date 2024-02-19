@@ -87,7 +87,7 @@ const TestimonialsSection = () => {
                 ))}
             </div>
 
-            <div>
+            <div className="py-32">
                 <InfiniteMovingLogos 
                     items={clientLogos}
                     direction="left"
