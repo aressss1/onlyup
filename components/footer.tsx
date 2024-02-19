@@ -21,7 +21,7 @@ const Footer = () => {
                 variants={varaiant}
                 transition={{
                     duration: 0.6,
-                    ease: [0.11, 0, 0.5, 0],
+                    ease: "circInOut",
                     delay: 0.4
                 }}    
                 className=" flex flex-col gap-12 py-24 md:px-12 px-4" 

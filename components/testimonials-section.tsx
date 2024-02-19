@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
             variants={varaiant}
             transition={{
                 duration: 0.6,
-                ease: [0.11, 0, 0.5, 0],
+                ease: "backInOut",
                 delay: 0.7
             }}
             id="testimonials" 
