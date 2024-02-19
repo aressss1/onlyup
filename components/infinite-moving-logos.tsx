@@ -67,7 +67,7 @@ export const InfiniteMovingLogos = ({
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "15s");
+        containerRef.current.style.setProperty("--animation-duration", "17s");
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
