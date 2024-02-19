@@ -77,7 +77,7 @@ const Footer = () => {
 
             <div className="relative text-sm text-center py-4 opacity-70 " >
                 Copyright &copy; 2024 All rights reserved.
-                <div className='hidden md:flex absolute top-3 right-2 text-xs opacity-85 hover:opacity-100 ' >
+                <div className='hidden md:flex absolute top-5 right-4 text-xs opacity-85 hover:opacity-100 ' >
                     <Link href="/" >
                         Developed by Faizan Asghar
                     </Link>
