@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <div 
-      className="h-full bg-bg customSelectColor scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 " 
+      className="h-full bg-bg customSelectColor " 
     >
         <Navbar />
         <HeroSection />

@@ -92,7 +92,6 @@ const config = {
   plugins: [
     require("tailwindcss-animate"),
     [addVariablesForColors],
-    require('tailwind-scrollbar'),
   ],
 } satisfies Config
 
