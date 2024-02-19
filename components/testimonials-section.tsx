@@ -99,17 +99,19 @@ const TestimonialsSection = () => {
                 ))}
             </div>
 
-            <div className="flex flex-col gap-8 py-32">
+            <div className="flex flex-col gap-20 py-32">
                 <InfiniteMovingLogos 
                     items={clientLogos}
                     direction="left"
                     speed="fast"
+                    pauseOnHover={false}
                     className="opacity-60"
                 />
                 <InfiniteMovingLogos 
                     items={clientLogos}
                     direction="right"
                     speed="fast"
+                    pauseOnHover={false}
                     className="opacity-60"
                 />
             </div>
