@@ -35,9 +35,9 @@ const Footer = () => {
                         <div className='text-base ' >
                             Have a project? Let&apos; Talk.
                         </div>
-                        <div className='text-3xl md:text-5xl border-container  ' >
+                        <div className='text-4xl md:text-5xl border-container  ' >
                             <p className='pb-2' >info@onlyup.com</p>
-                            <div className='border-b-4 border-black border-transition '/>
+                            <div className='border-b-[6px] border-black border-transition '/>
                         </div>
                     </div>
                     <div className="flex gap-8   " >
