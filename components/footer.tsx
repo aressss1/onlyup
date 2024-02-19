@@ -35,8 +35,17 @@ const Footer = () => {
                         <div className='text-base  ' >
                             Have a project? Let&apos; Talk.
                         </div>
-                        <div className='text-3xl md:text-5xl border-b-4 border-black hover:border-[#ef4242] ' >
+                        <div className='text-3xl md:text-5xl  ' >
                             <p className='pb-2 hover:text-[#ef4242]' >info@onlyup.com</p>
+                            <motion.div
+                                initial={{ opacity: 0 , x: -25 }}
+                                whileHover={{ opacity: 1 , x: 0 }} 
+                                transition={{
+                                    duration: 0.2,
+                                    ease: "easeInOut",
+                                }}
+                                className='border-b-[6px] border-black'
+                            />
                         </div>
                     </div>
                     <div className="flex gap-8   " >
