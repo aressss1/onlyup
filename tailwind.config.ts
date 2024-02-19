@@ -25,7 +25,7 @@ const config = {
       },
     },
     extend: {
-      animationScroll: {
+      animationscroll: {
         scroll:
           "scroll var(--animationscroll-duration, 40s) var(--animationscroll-direction, forwards) linear infinite",
       },
