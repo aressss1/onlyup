@@ -77,7 +77,7 @@ const Footer = () => {
 
             <div className=" flex justify-center flex-col md:flex-row  text-sm text-center py-4 opacity-70 " >
                 Copyright &copy; 2024 All rights reserved.
-                <div className='hidden md:self-end text-xs opacity-85 hover:opacity-100 ' >
+                <div className='hidden md:flex self-end text-xs opacity-85 hover:opacity-100 ' >
                     <Link href="/" >
                         Developed by Faizan Asghar
                     </Link>
