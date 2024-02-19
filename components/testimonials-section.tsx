@@ -99,7 +99,7 @@ const TestimonialsSection = () => {
                 ))}
             </div>
 
-            <div className="flex flex-col gap-20 py-32">
+            <div className="flex flex-col gap-8 md:gap-20 py-8 md:py-32">
                 <InfiniteMovingLogos 
                     items={clientLogos}
                     direction="left"
