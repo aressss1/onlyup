@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import {  motion } from 'framer-motion';
+import { InfiniteMovingLogos } from "./infinite-moving-logos";
 
 
 const TestimonialsSection = () => {
@@ -19,6 +20,25 @@ const TestimonialsSection = () => {
             clientRole: "Founder",
             clientCompanyName: "DreamBuilders Inc.",
             clientImage: "/c-2.jpg"
+        },
+    ]
+
+    const clientLogos = [
+        {
+            src: "/logos/l-1.svg",
+            name: "l-1"
+        },
+        {
+            src: "/logos/l-2.svg",
+            name: "l-2"
+        },
+        {
+            src: "/logos/l-3.svg",
+            name: "l-3"
+        },
+        {
+            src: "/logos/l-4.svg",
+            name: "l-4"
         },
     ]
 
@@ -44,6 +64,7 @@ const TestimonialsSection = () => {
             <div className="text-sm font-normal opacity-80 uppercase " >
                 Testimonials
             </div>
+
             <div className=" lg:px-[16rem] md:px-16 py-10 flex lg:flex-row flex-col gap-6 " >
                 {reviews.map((review) => (
                     <div key={review.clientName} className="bg-white rounded-xl md:p-12 p-6 " >
@@ -64,6 +85,14 @@ const TestimonialsSection = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div>
+                <InfiniteMovingLogos 
+                    items={clientLogos}
+                    direction="left"
+                    speed="fast"
+                />
             </div>
         </motion.div>
     );
