@@ -32,20 +32,12 @@ const Footer = () => {
 
                 <div className=' flex flex-col md:flex-row gap-12 md:gap-0 justify-between' >
                     <div className='flex flex-col text-left gap-6' >
-                        <div className='text-base  ' >
+                        <div className='text-base ' >
                             Have a project? Let&apos; Talk.
                         </div>
-                        <div className='text-3xl md:text-5xl  ' >
-                            <p className='pb-2 hover:text-[#ef4242]' >info@onlyup.com</p>
-                            <motion.div
-                                initial={{ opacity: 0 , x: -25 }}
-                                whileHover={{ opacity: 1 , x: 0 }} 
-                                transition={{
-                                    duration: 0.2,
-                                    ease: "easeInOut",
-                                }}
-                                className='border-b-[6px] border-black'
-                            />
+                        <div className='text-3xl md:text-5xl border-container  ' >
+                            <p className='pb-2' >info@onlyup.com</p>
+                            <div className='border-b-4 border-black border-transition '/>
                         </div>
                     </div>
                     <div className="flex gap-8   " >

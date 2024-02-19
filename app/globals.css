@@ -325,4 +325,17 @@ body {
       background-color: #ef4242;
     }
   }
+
+  .border-container {
+    position: relative;
+  }
+
+  .border-transition {
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+  .border-container:hover .border-transition {
+    width: 100%;
+  }
 }
