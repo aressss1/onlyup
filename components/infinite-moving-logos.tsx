@@ -67,7 +67,7 @@ export const InfiniteMovingLogos = ({
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
+        containerRef.current.style.setProperty("--animation-duration", "10s");
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
@@ -95,7 +95,7 @@ export const InfiniteMovingLogos = ({
         {items.map((item, idx) => (
             <Image
                 key={idx}
-                className="h-16"
+                className="h-12"
                 src={item.src}
                 alt={item.name}
             />

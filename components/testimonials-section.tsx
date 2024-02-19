@@ -40,6 +40,18 @@ const TestimonialsSection = () => {
             src: "/logos/l-4.svg",
             name: "l-4"
         },
+        {
+            src: "/logos/l-5.svg",
+            name: "l-5"
+        },
+        {
+            src: "/logos/l-6.svg",
+            name: "l-6"
+        },
+        {
+            src: "/logos/l-7.svg",
+            name: "l-7"
+        },
     ]
 
     const varaiant = {
@@ -87,11 +99,18 @@ const TestimonialsSection = () => {
                 ))}
             </div>
 
-            <div className="py-32">
+            <div className="flex flex-col gap-8 py-32">
                 <InfiniteMovingLogos 
                     items={clientLogos}
                     direction="left"
                     speed="fast"
+                    className="opacity-60"
+                />
+                <InfiniteMovingLogos 
+                    items={clientLogos}
+                    direction="right"
+                    speed="fast"
+                    className="opacity-60"
                 />
             </div>
         </motion.div>
