@@ -13,7 +13,7 @@
 ## Cloning the repository
 
 ```shell
-git clone https://github.com/aressss1/agency-landing-page.git
+https://github.com/aressss1/onlyup.git
 ```
 
 ## Install packages
