@@ -1,4 +1,4 @@
-### Free Agency Landing Page Template.
+### Business Starter Landing Page.
 
 ### Technologies I've used for this:-
 
@@ -30,8 +30,6 @@ Running commands with npm `npm run [command]`
 | :-------------- | :--------------------------------------- |
 | `dev`           | Starts a development instance of the app |
 
-
-You can start editing the page by modifying `app/page.tsx`. 
 
 ### Learn More About ME?
 
